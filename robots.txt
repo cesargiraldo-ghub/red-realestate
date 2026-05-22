@@ -1,0 +1,46 @@
+# RED Real Estate - robots.txt
+# Configuración para motores de búsqueda y crawlers de IA
+
+User-agent: *
+Allow: /
+
+# Bots de IA permitidos (para que ChatGPT, Perplexity, Claude, Gemini, etc. puedan recomendar tu sitio)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Bots de búsqueda principales
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Sitemap
+Sitemap: https://red-realestate.com/sitemap.xml
