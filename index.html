@@ -177,6 +177,78 @@ fbq('init', '574846248420695');fbq('track', 'PageView');
     .cta-banner { padding: 48px 24px; }
     .pillar { padding: 28px; }
   }
+
+  /* TESTIMONIAL VIDEO FEATURE */
+  .testimonial-feature {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 48px;
+    align-items: center;
+    background: var(--surface);
+    backdrop-filter: var(--blur);
+    border: 1px solid var(--border-strong);
+    border-radius: 28px;
+    padding: 40px;
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .testimonial-feature::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 85% 30%, rgba(140, 16, 31, 0.18), transparent 65%);
+    pointer-events: none;
+  }
+  .testimonial-feature-video {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    aspect-ratio: 9/16;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.5), 0 0 0 1px rgba(140, 16, 31, 0.3);
+  }
+  .testimonial-feature-video iframe {
+    width: 100%; height: 100%; border: 0; display: block;
+  }
+  .testimonial-feature-text { position: relative; z-index: 1; }
+  .testimonial-feature-text h3 {
+    font-size: clamp(24px, 2.4vw, 36px);
+    line-height: 1.15;
+    margin: 0 0 18px 0;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .testimonial-feature-text h3 .accent {
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .testimonial-feature-text p {
+    color: var(--text-dim);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .integration-logo {
+    max-width: 56px;
+    max-height: 56px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  @media (max-width: 800px) {
+    .testimonial-feature {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      padding: 28px;
+      text-align: center;
+    }
+    .testimonial-feature-video {
+      max-width: 260px;
+      margin: 0 auto;
+    }
+  }
 </style>
 </head>
 <body data-page="inicio">
@@ -355,6 +427,17 @@ fbq('init', '574846248420695');fbq('track', 'PageView');
       <span class="section-tag">Casos de éxito</span>
       <h2>Los hechos<br><span class="accent">enamoran.</span></h2>
       <p class="section-sub">Agentes e inmobiliarias que multiplicaron sus resultados con RED.</p>
+    </div>
+
+    <div class="testimonial-feature reveal">
+      <div class="testimonial-feature-video">
+        <iframe src="https://www.youtube.com/embed/pABrSF8xfpQ" title="Testimonio RED Real Estate" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="testimonial-feature-text">
+        <span class="section-tag" style="margin-bottom: 20px;">Testimonio en video</span>
+        <h3>Resultados reales,<br><span class="accent">contados por sus protagonistas.</span></h3>
+        <p>Escucha de viva voz cómo RED está transformando carreras inmobiliarias. Esto es lo que pasa cuando un agente cuenta con la tecnología, la formación y la comunidad correctas.</p>
+      </div>
     </div>
 
     <div class="testimonials">
