@@ -1,7 +1,7 @@
 // RED REAL ESTATE - JS COMPARTIDO
 const RED_LINKS = {
   demo: 'https://api.red-realestate.com/widget/bookings/agendar_cita_red',
-  login: 'https://hub.red-realestate.com/',
+  login: 'https://membresias.red-realestate.com/',
   whatsapp: 'https://wa.link/uci9hf',
   crmRed: 'https://crmred.co/',
   redAcademy: 'https://redacademy.red-realestate.com/',
