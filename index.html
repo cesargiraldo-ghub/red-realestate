@@ -249,6 +249,76 @@ fbq('init', '574846248420695');fbq('track', 'PageView');
       margin: 0 auto;
     }
   }
+
+  /* MENU MÓVIL */
+  .mobile-nav-actions { display: none; align-items: center; gap: 8px; }
+  .mobile-login-btn {
+    padding: 8px 14px;
+    background: transparent;
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid var(--border-strong);
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .mobile-login-btn:hover { background: var(--surface-strong); }
+  .mobile-menu-btn {
+    width: 40px; height: 40px;
+    border-radius: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border-strong);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 5px; cursor: pointer; padding: 0;
+    transition: all 0.2s;
+  }
+  .mobile-menu-btn:hover { background: var(--surface-strong); }
+  .mobile-menu-btn span {
+    display: block; width: 18px; height: 2px;
+    background: var(--text); border-radius: 2px;
+    transition: all 0.3s;
+  }
+  .mobile-menu-btn.active span:nth-child(1) { transform: rotate(45deg) translate(4px, 5px); }
+  .mobile-menu-btn.active span:nth-child(2) { opacity: 0; }
+  .mobile-menu-btn.active span:nth-child(3) { transform: rotate(-45deg) translate(4px, -5px); }
+  .mobile-menu-panel {
+    position: fixed; top: 90px; left: 20px; right: 20px;
+    background: rgba(15, 18, 22, 0.95);
+    backdrop-filter: var(--blur);
+    -webkit-backdrop-filter: var(--blur);
+    border: 1px solid var(--border-strong);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    z-index: 99;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.25s, transform 0.25s;
+  }
+  .mobile-menu-panel.open { opacity: 1; transform: translateY(0); pointer-events: auto; }
+  .mobile-menu-panel a {
+    display: block; padding: 14px 18px;
+    color: var(--text); text-decoration: none;
+    font-size: 16px; font-weight: 500;
+    border-radius: 12px;
+    transition: background 0.2s;
+    margin-bottom: 4px;
+  }
+  .mobile-menu-panel a:hover { background: var(--surface-strong); }
+  .mobile-menu-panel a.primary {
+    background: var(--gradient-brand);
+    color: white; text-align: center;
+    margin-top: 12px;
+    box-shadow: 0 4px 20px rgba(140, 16, 31, 0.4);
+  }
+  @media (max-width: 900px) {
+    .mobile-nav-actions { display: flex; }
+    .nav-cta { display: none !important; }
+  }
 </style>
 </head>
 <body data-page="inicio">
@@ -291,10 +361,10 @@ fbq('init', '574846248420695');fbq('track', 'PageView');
       </div>
 
       <div class="hero-stats">
-        <div class="stat"><div class="stat-num">+70</div><div class="stat-label">Portales Nac. e Int.</div></div>
+        <div class="stat"><div class="stat-num">+80</div><div class="stat-label">Portales Nac. e Int.</div></div>
         <div class="stat"><div class="stat-num">+1.700</div><div class="stat-label">Apps conectadas</div></div>
         <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">IA y automatización</div></div>
-        <div class="stat"><div class="stat-num">+600</div><div class="stat-label">Agentes activos</div></div>
+        <div class="stat"><div class="stat-num">+650</div><div class="stat-label">Agentes activos</div></div>
       </div>
     </div>
   </section>
@@ -316,7 +386,7 @@ fbq('init', '574846248420695');fbq('track', 'PageView');
           </svg>
         </div>
         <h3>IA y automatización inteligente</h3>
-        <p style="max-width: 480px;">Chatbots con IA que conversan con tus clientes 24/7, califican leads automáticamente y agendan citas mientras tú descansas. Flujos inteligentes que nunca dejan que se enfríe una oportunidad.</p>
+        <p style="max-width: 520px;">Conecta tu inventario de inmuebles con inteligencia artificial y transforma la forma en que atiendes a tus clientes. Nuestros chatbots con IA conversan 24/7, consultan en tiempo real la base de datos de tus propiedades, recomiendan inmuebles según las necesidades de cada cliente, envían fichas comerciales, califican prospectos y agendan citas automáticamente. Crea flujos inteligentes que responden de inmediato, hacen seguimiento y evitan que las oportunidades se enfríen, incluso mientras tú descansas.</p>
         <div class="tag-chips">
           <span class="tag-chip">OpenAI · GPT-5</span>
         </div>
@@ -348,7 +418,7 @@ fbq('init', '574846248420695');fbq('track', 'PageView');
             <circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/>
           </svg>
         </div>
-        <h3>+70 portales con 1 clic</h3>
+        <h3>+80 portales con 1 clic</h3>
         <p>Fincaraíz, Metrocuadrado, Mercadolibre, Proppit, Ciencuadras y muchos más. Publicación masiva sincronizada.</p>
         <div class="tag-chips">
           <span class="tag-chip">Integrador</span>
@@ -366,7 +436,7 @@ fbq('init', '574846248420695');fbq('track', 'PageView');
           </svg>
         </div>
         <h3>Comunidad MLS</h3>
-        <p>Forma parte de una red colaborativa con +600 agentes. Comparte inventario, divide comisiones y cierra negocios más rápido. Aquí no trabajas solo, trabajas en RED.</p>
+        <p>Forma parte de una red colaborativa con +650 agentes. Comparte inventario, divide comisiones y cierra negocios más rápido. Aquí no trabajas solo, trabajas en RED.</p>
         <div class="tag-chips">
           <span class="tag-chip">+10.000 Propiedades</span>
           <span class="tag-chip">Convenios Corporativos</span>
@@ -381,8 +451,8 @@ fbq('init', '574846248420695');fbq('track', 'PageView');
             <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
           </svg>
         </div>
-        <h3>Red Academy</h3>
-        <p>Capacitaciones, certificaciones y entrenamientos 100% online. Aprende captaciones, cierres, marketing inmobiliario y derecho a tu ritmo, con certificados que avalan tu experiencia.</p>
+        <h3>Red Academy + RED Coach IA</h3>
+        <p>Accede a capacitaciones, certificaciones y entrenamientos 100% online diseñados para impulsar tu crecimiento en el sector inmobiliario. Aprende a tu ritmo sobre captación de propiedades, cierres, marketing inmobiliario, derecho y uso de herramientas digitales, con certificados que respaldan tus conocimientos y fortalecen tu perfil profesional. Además, cuentas con <strong style="color: var(--text);">RED Coach</strong>, tu instructor virtual disponible 24/7 que te guía paso a paso, resuelve tus dudas y te enseña a usar todo el ecosistema RED.</p>
         <div class="tag-chips">
           <span class="tag-chip">Capacitación Semanal</span>
           <span class="tag-chip">Talleres de Marketing</span>
@@ -479,5 +549,68 @@ fbq('init', '574846248420695');fbq('track', 'PageView');
 
 <div id="footer-placeholder"></div>
 <script src="app.js"></script>
+<!-- MENÚ MÓVIL - se auto-inyecta cuando el nav está listo -->
+<script>
+(function() {
+  function initMobileMenu() {
+    var nav = document.querySelector('nav');
+    if (!nav) { setTimeout(initMobileMenu, 100); return; }
+    if (nav.querySelector('.mobile-nav-actions')) return;
+
+    var navCta = nav.querySelector('.nav-cta');
+
+    var actions = document.createElement('div');
+    actions.className = 'mobile-nav-actions';
+    actions.innerHTML =
+      '<a href="https://app.red-realestate.com" target="_blank" rel="noopener" class="mobile-login-btn">Iniciar Sesión</a>' +
+      '<button class="mobile-menu-btn" aria-label="Menú" id="mobileMenuToggle">' +
+      '<span></span><span></span><span></span>' +
+      '</button>';
+
+    if (navCta) {
+      navCta.parentNode.insertBefore(actions, navCta.nextSibling);
+    } else {
+      nav.appendChild(actions);
+    }
+
+    var panel = document.createElement('div');
+    panel.className = 'mobile-menu-panel';
+    panel.id = 'mobileMenuPanel';
+    panel.innerHTML =
+      '<a href="beneficios.html">Beneficios</a>' +
+      '<a href="sobre-nosotros.html">Sobre Nosotros</a>' +
+      '<a href="precios.html">Precios</a>' +
+      '<a href="https://app.red-realestate.com" target="_blank" rel="noopener">Iniciar Sesión</a>' +
+      '<a href="https://api.red-realestate.com/widget/bookings/agendar_cita_red" target="_blank" rel="noopener" class="primary">Agendar Demostración →</a>';
+    document.body.appendChild(panel);
+
+    var btn = document.getElementById('mobileMenuToggle');
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      btn.classList.toggle('active');
+      panel.classList.toggle('open');
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!panel.contains(e.target) && !btn.contains(e.target)) {
+        btn.classList.remove('active');
+        panel.classList.remove('open');
+      }
+    });
+    panel.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        btn.classList.remove('active');
+        panel.classList.remove('open');
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMobileMenu);
+  } else {
+    initMobileMenu();
+  }
+})();
+</script>
 </body>
 </html>
