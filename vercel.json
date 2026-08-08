@@ -3,11 +3,6 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/blog/:path*",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/wp-admin/:path*",
       "destination": "/",
       "permanent": true
