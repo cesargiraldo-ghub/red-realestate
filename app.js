@@ -26,7 +26,7 @@ function renderNav(activePage = '') {
         <li><a href="beneficios.html" class="${activePage === 'beneficios' ? 'active' : ''}">Beneficios</a></li>
         <li><a href="sobre-nosotros.html" class="${activePage === 'sobre-nosotros' ? 'active' : ''}">Sobre Nosotros</a></li>
         <li><a href="precios.html" class="${activePage === 'precios' ? 'active' : ''}">Precios</a></li>
-        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/blog">Blog</a></li>
         <li><a href="${RED_LINKS.login}" target="_blank" rel="noopener">Iniciar Sesión</a></li>
       </ul>
       <a href="${RED_LINKS.demo}" target="_blank" rel="noopener" class="nav-cta">Agendar Demostración →</a>
@@ -72,7 +72,7 @@ function renderFooter() {
             <h4>Contacto</h4>
             <ul>
               <li><a href="${RED_LINKS.whatsapp}" target="_blank" rel="noopener">WhatsApp</a></li>
-              <li><a href="/blog/">Blog</a></li>
+              <li><a href="/blog">Blog</a></li>
         <li><a href="${RED_LINKS.login}" target="_blank" rel="noopener">Iniciar Sesión</a></li>
               <li><a href="${RED_LINKS.demo}" target="_blank" rel="noopener">Soporte</a></li>
             </ul>
