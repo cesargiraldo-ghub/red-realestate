@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog · RED Real Estate · Tecnología, CRM y Educación Inmobiliaria</title>
+<meta name="description" content="Blog de RED Real Estate: artículos sobre CRM inmobiliario, inteligencia artificial, tecnología, comunidad MLS, educación y ventas para agentes inmobiliarios en Colombia y Latinoamérica.">
+<meta name="keywords" content="blog inmobiliario, CRM inmobiliario, tecnología inmobiliaria, IA inmobiliaria, educación inmobiliaria, marketing inmobiliario, MLS Colombia, agentes inmobiliarios">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://www.red-realestate.com/blog/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog · RED Real Estate">
+<meta property="og:description" content="Artículos sobre tecnología inmobiliaria, CRM, IA, educación y comunidad para agentes en Colombia y Latinoamérica.">
+<meta property="og:url" content="https://www.red-realestate.com/blog/">
+<meta property="og:image" content="https://assets.cdn.filesafe.space/edHddtwNySAbsqZNRk0E/media/68b0e4531da5dd73e4490821.png">
+<meta property="og:site_name" content="RED Real Estate">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Blog RED Real Estate",
+  "description": "Artículos sobre tecnología inmobiliaria, CRM, inteligencia artificial, educación y comunidad para agentes inmobiliarios en Colombia y Latinoamérica.",
+  "url": "https://www.red-realestate.com/blog/",
+  "publisher": {"@type": "Organization", "name": "RED Real Estate Digital", "logo": {"@type": "ImageObject", "url": "https://assets.cdn.filesafe.space/edHddtwNySAbsqZNRk0E/media/68b0e4531da5dd73e4490821.png"}}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --brand-red: #8c101f;
+  --brand-red-light: #b8253a;
+  --brand-red-glow: #d63854;
+  --brand-dark: #383f45;
+  --brand-dark-deep: #1f2429;
+  --bg-base: #0f1216;
+  --bg-deep: #080a0d;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-strong: rgba(255, 255, 255, 0.07);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --text: #f5f5f7;
+  --text-dim: rgba(245, 245, 247, 0.7);
+  --text-faint: rgba(245, 245, 247, 0.4);
+  --gradient-brand: linear-gradient(135deg, #8c101f 0%, #b8253a 60%, #d63854 100%);
+  --gradient-dark: linear-gradient(135deg, #383f45 0%, #1f2429 100%);
+  --gradient-mixed: linear-gradient(135deg, #8c101f 0%, #383f45 100%);
+  --blur: blur(24px);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--bg-base);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.article-container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+/* NAV */
+.blog-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(15, 18, 22, 0.8);
+  backdrop-filter: var(--blur);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+}
+.blog-nav .container { display: flex; align-items: center; justify-content: space-between; }
+.blog-nav img { height: 32px; }
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a { font-size: 14px; font-weight: 500; color: var(--text-dim); transition: color 0.2s; }
+.nav-links a:hover { color: var(--text); }
+.nav-cta {
+  padding: 10px 20px; background: var(--gradient-brand); color: white !important;
+  border-radius: 100px; font-size: 14px; font-weight: 600;
+  box-shadow: 0 4px 20px rgba(140, 16, 31, 0.4);
+}
+@media (max-width: 700px) { .nav-links a:not(.nav-cta) { display: none; } }
+
+/* HERO BLOG */
+.blog-hero { padding: 80px 0 48px; text-align: center; position: relative; overflow: hidden; }
+.blog-hero::before {
+  content: ''; position: absolute; top: -50%; left: 50%; transform: translateX(-50%);
+  width: 800px; height: 600px;
+  background: radial-gradient(circle, rgba(140, 16, 31, 0.15), transparent 70%);
+  pointer-events: none;
+}
+.blog-hero h1 { font-size: clamp(32px, 5vw, 52px); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 16px; position: relative; }
+.blog-hero .accent { background: var(--gradient-brand); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.blog-hero p { font-size: 18px; color: var(--text-dim); max-width: 560px; margin: 0 auto; position: relative; }
+
+/* GRID DE ARTÍCULOS */
+.blog-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px; padding: 40px 0 80px;
+}
+.blog-card {
+  background: var(--surface); backdrop-filter: var(--blur);
+  border: 1px solid var(--border); border-radius: 20px;
+  overflow: hidden; transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  display: flex; flex-direction: column;
+}
+.blog-card:hover { transform: translateY(-6px); border-color: rgba(140,16,31,0.4); background: var(--surface-strong); box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
+.blog-card-img { height: 180px; background: var(--gradient-mixed); position: relative; display: flex; align-items: center; justify-content: center; }
+.blog-card-img svg { width: 64px; height: 64px; stroke: rgba(255,255,255,0.9); opacity: 0.9; }
+.blog-card-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+.blog-badge {
+  display: inline-block; padding: 4px 12px; border-radius: 100px;
+  font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;
+  margin-bottom: 14px; align-self: flex-start;
+  background: rgba(140, 16, 31, 0.15); color: var(--brand-red-glow);
+  border: 1px solid rgba(140, 16, 31, 0.3);
+}
+.blog-card h2 { font-size: 19px; font-weight: 700; line-height: 1.3; margin-bottom: 10px; letter-spacing: -0.01em; }
+.blog-card p { font-size: 14px; color: var(--text-dim); line-height: 1.6; margin-bottom: 16px; flex: 1; }
+.blog-card-meta { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-faint); margin-top: auto; }
+.blog-card-link { color: var(--brand-red-glow); font-weight: 600; font-size: 14px; }
+
+/* ARTÍCULO INDIVIDUAL */
+.article-header { padding: 60px 0 40px; }
+.article-header .blog-badge { margin-bottom: 20px; }
+.article-header h1 { font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 20px; }
+.article-meta { display: flex; align-items: center; gap: 16px; color: var(--text-faint); font-size: 14px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+.article-hero-img { height: 280px; border-radius: 24px; background: var(--gradient-mixed); margin: 32px 0; display: flex; align-items: center; justify-content: center; }
+.article-hero-img svg { width: 80px; height: 80px; stroke: rgba(255,255,255,0.9); }
+.article-body { padding: 8px 0 60px; font-size: 17px; }
+.article-body h2 { font-size: 26px; font-weight: 700; margin: 40px 0 16px; letter-spacing: -0.02em; }
+.article-body h3 { font-size: 20px; font-weight: 600; margin: 28px 0 12px; }
+.article-body p { margin-bottom: 20px; color: var(--text-dim); }
+.article-body ul, .article-body ol { margin: 0 0 20px 24px; color: var(--text-dim); }
+.article-body li { margin-bottom: 10px; }
+.article-body strong { color: var(--text); font-weight: 600; }
+.article-body a { color: var(--brand-red-glow); text-decoration: underline; }
+.article-cta {
+  background: linear-gradient(135deg, rgba(140,16,31,0.2), rgba(56,63,69,0.2));
+  border: 1px solid var(--border-strong); border-radius: 24px;
+  padding: 40px; text-align: center; margin: 48px 0;
+}
+.article-cta h3 { font-size: 24px; margin-bottom: 12px; }
+.article-cta p { color: var(--text-dim); margin-bottom: 24px; }
+.btn-primary {
+  display: inline-block; padding: 14px 28px; background: var(--gradient-brand);
+  color: white; border-radius: 100px; font-weight: 600;
+  box-shadow: 0 4px 20px rgba(140,16,31,0.4); transition: transform 0.2s;
+}
+.btn-primary:hover { transform: translateY(-2px); }
+
+/* RELACIONADOS */
+.related { padding: 40px 0 80px; border-top: 1px solid var(--border); }
+.related h3 { font-size: 22px; margin-bottom: 24px; }
+.related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.related-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 20px; transition: all 0.3s; }
+.related-card:hover { border-color: rgba(140,16,31,0.4); background: var(--surface-strong); }
+.related-card span { font-size: 11px; color: var(--brand-red-glow); font-weight: 600; text-transform: uppercase; }
+.related-card h4 { font-size: 15px; margin-top: 8px; line-height: 1.4; }
+
+/* FOOTER */
+.blog-footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; color: var(--text-faint); font-size: 14px; }
+.blog-footer a { color: var(--brand-red-glow); }
+.back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--text-dim); font-size: 14px; margin: 32px 0; transition: color 0.2s; }
+.back-link:hover { color: var(--text); }
+</style>
+</head>
+<body>
+<nav class="blog-nav">
+  <div class="container">
+    <a href="https://www.red-realestate.com/"><img src="https://assets.cdn.filesafe.space/edHddtwNySAbsqZNRk0E/media/68b0e4531da5dd73e4490821.png" alt="RED Real Estate"></a>
+    <div class="nav-links">
+      <a href="https://www.red-realestate.com/beneficios.html">Beneficios</a>
+      <a href="https://www.red-realestate.com/precios.html">Precios</a>
+      <a href="/blog/">Blog</a>
+      <a href="https://api.red-realestate.com/widget/bookings/agendar_cita_red" target="_blank" rel="noopener" class="nav-cta">Agendar Demostración</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="blog-hero">
+    <h1>Blog <span class="accent">RED</span></h1>
+    <p>Ideas, estrategias y tecnología para el agente inmobiliario del futuro. CRM, inteligencia artificial, comunidad y educación en un solo lugar.</p>
+  </div>
+  <div class="blog-grid">
+    <a href="/blog/que-es-un-crm-inmobiliario.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">CRM</span>
+        <h2>Qué es un CRM inmobiliario y por qué lo necesitas en 2026</h2>
+        <p>Descubre qué es un CRM inmobiliario, cómo funciona y por qué es la herramienta que está transformando el negocio de los agentes en Colombia y Latinoamérica.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/7-senales-inmobiliaria-necesita-crm.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">CRM</span>
+        <h2>7 señales de que tu inmobiliaria necesita un CRM ya</h2>
+        <p>¿Pierdes leads, olvidas seguimientos o gestionas todo en Excel? Estas 7 señales indican que tu inmobiliaria necesita un CRM urgentemente.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/crm-vs-excel-inmobiliaria.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">CRM</span>
+        <h2>CRM vs Excel: por qué las inmobiliarias top ya no usan hojas de cálculo</h2>
+        <p>Comparativa real entre usar un CRM inmobiliario y Excel. Descubre por qué las inmobiliarias más exitosas de Colombia dejaron atrás las hojas de cálculo.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/como-elegir-mejor-crm-inmobiliario-colombia.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">CRM</span>
+        <h2>Cómo elegir el mejor CRM inmobiliario en Colombia</h2>
+        <p>Guía completa para elegir el CRM inmobiliario ideal en Colombia: funcionalidades clave, integración con portales, precios y qué evaluar antes de decidir.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/automatizacion-seguimiento-leads.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">CRM</span>
+        <h2>Automatización de seguimiento: nunca más pierdas un lead</h2>
+        <p>Aprende a automatizar el seguimiento de tus prospectos inmobiliarios y deja de perder oportunidades por falta de tiempo o desorganización.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/fichas-comerciales-profesionales.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">CRM</span>
+        <h2>Fichas comerciales profesionales: cómo presentar propiedades que venden</h2>
+        <p>Descubre cómo crear fichas comerciales inmobiliarias profesionales que capten la atención de tus clientes y aceleren el cierre de tus ventas.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/inteligencia-artificial-bienes-raices.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Tecnología</span>
+        <h2>Inteligencia artificial en bienes raíces: guía para agentes 2026</h2>
+        <p>Todo lo que un agente inmobiliario debe saber sobre inteligencia artificial en 2026: casos de uso, herramientas y cómo aplicarla para vender más.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/chatbots-ia-atencion-24-7.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Tecnología</span>
+        <h2>Chatbots con IA: cómo atender clientes 24/7 sin agrandar tu equipo</h2>
+        <p>Los chatbots con inteligencia artificial permiten atender clientes inmobiliarios las 24 horas. Descubre cómo implementarlos y multiplicar tus conversiones.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/publicacion-portales-multiposting.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Tecnología</span>
+        <h2>Publicación en +80 portales con un clic: la revolución del multiposting</h2>
+        <p>El multiposting inmobiliario te permite publicar en +80 portales nacionales e internacionales con un solo clic. Ahorra horas y multiplica tu alcance.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/ia-califica-prospectos-automaticamente.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Tecnología</span>
+        <h2>Cómo la IA califica tus prospectos automáticamente</h2>
+        <p>Descubre cómo la inteligencia artificial puede calificar tus prospectos inmobiliarios de forma automática y ayudarte a enfocarte en los que sí compran.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/whatsapp-business-inmobiliarias.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Tecnología</span>
+        <h2>WhatsApp Business para inmobiliarias: la herramienta que no usas bien</h2>
+        <p>Aprende a usar WhatsApp Business como un profesional inmobiliario: automatización, catálogos, respuestas rápidas y estrategias que sí convierten.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/futuro-agente-inmobiliario-digital.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Tecnología</span>
+        <h2>El futuro del agente inmobiliario es digital: tendencias 2026</h2>
+        <p>Las tendencias tecnológicas que definirán el negocio inmobiliario en 2026. Prepárate para el futuro digital del sector con esta guía completa.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/que-es-mls-inmobiliario.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Comunidad</span>
+        <h2>Qué es un MLS inmobiliario y cómo multiplica tus cierres</h2>
+        <p>Descubre qué es un MLS (Multiple Listing Service) inmobiliario, cómo funciona en Colombia y por qué multiplica las oportunidades de cierre de los agentes.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/trabajar-en-red-compartir-inventario.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Comunidad</span>
+        <h2>Trabajar en RED: el poder de compartir inventario entre agentes</h2>
+        <p>Compartir inventario entre agentes inmobiliarios multiplica las oportunidades de negocio. Descubre cómo funciona una comunidad colaborativa inmobiliaria.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/comisiones-compartidas-inmobiliarias.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Comunidad</span>
+        <h2>Comisiones compartidas: cómo cerrar más vendiendo propiedades de otros</h2>
+        <p>Las comisiones compartidas permiten a los agentes cerrar más negocios vendiendo propiedades de otros colegas. Aprende cómo aprovechar este modelo.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/de-agente-solitario-a-comunidad.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Comunidad</span>
+        <h2>De agente solitario a comunidad inmobiliaria: el cambio de mentalidad</h2>
+        <p>El paso de trabajar solo a formar parte de una comunidad inmobiliaria puede transformar tu negocio. Descubre por qué colaborar es la clave del éxito.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/convenios-corporativos-inmobiliarios.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Comunidad</span>
+        <h2>Convenios corporativos: cómo acceder a clientes empresariales</h2>
+        <p>Los convenios corporativos abren la puerta a clientes empresariales de alto valor. Aprende cómo acceder a este mercado a través de una red inmobiliaria.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/red-colaborativa-10000-propiedades.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Comunidad</span>
+        <h2>+10.000 propiedades a tu alcance: el valor de una red colaborativa</h2>
+        <p>Una red colaborativa inmobiliaria te da acceso a más de 10.000 propiedades. Descubre cómo esto transforma tu capacidad de cerrar negocios.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/certificaciones-inmobiliarias-colombia.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Educación</span>
+        <h2>Certificaciones inmobiliarias que valen la pena en Colombia</h2>
+        <p>Las certificaciones inmobiliarias más valiosas en Colombia para profesionalizar tu carrera, ganar credibilidad y diferenciarte de la competencia.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/como-ser-agente-inmobiliario-desde-cero.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Educación</span>
+        <h2>Cómo convertirte en agente inmobiliario profesional desde cero</h2>
+        <p>Guía paso a paso para convertirte en agente inmobiliario profesional en Colombia desde cero, sin experiencia previa. Formación, herramientas y primeros pasos.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/red-coach-mentor-ia-24-7.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Educación</span>
+        <h2>RED Coach: tu mentor de IA disponible 24/7</h2>
+        <p>RED Coach es el instructor virtual con inteligencia artificial que acompaña a los agentes inmobiliarios 24/7. Descubre cómo puede acelerar tu aprendizaje.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/5-habilidades-agente-inmobiliario.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Educación</span>
+        <h2>Las 5 habilidades que todo agente inmobiliario debe dominar</h2>
+        <p>Estas son las 5 habilidades esenciales que todo agente inmobiliario exitoso debe dominar para destacar en un mercado cada vez más competitivo.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/marketing-inmobiliario-estrategias.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Educación</span>
+        <h2>Marketing inmobiliario: estrategias que sí generan clientes</h2>
+        <p>Estrategias de marketing inmobiliario probadas que sí generan clientes reales. Aprende a atraer prospectos calificados y hacer crecer tu negocio.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/derecho-inmobiliario-basico.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Educación</span>
+        <h2>Derecho inmobiliario básico: lo que todo agente debe saber</h2>
+        <p>Conceptos esenciales de derecho inmobiliario que todo agente en Colombia debe conocer para operar con seguridad jurídica y proteger a sus clientes.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/como-captar-propiedades-exclusiva.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18 9l-6 6-4-4-3 3"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Ventas</span>
+        <h2>Cómo captar propiedades en exclusiva: guía práctica</h2>
+        <p>Guía práctica para captar propiedades en exclusiva como agente inmobiliario. Técnicas, argumentos y estrategias para conseguir mandatos exclusivos.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/tecnicas-cierre-inmobiliario.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18 9l-6 6-4-4-3 3"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Ventas</span>
+        <h2>Técnicas de cierre inmobiliario que funcionan en 2026</h2>
+        <p>Las técnicas de cierre inmobiliario más efectivas en 2026. Aprende a cerrar más ventas con estrategias probadas por los mejores agentes del sector.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/marca-personal-agente-inmobiliario.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18 9l-6 6-4-4-3 3"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Ventas</span>
+        <h2>Cómo construir tu marca personal como agente inmobiliario</h2>
+        <p>Tu marca personal es tu mayor activo como agente inmobiliario. Aprende a construirla, potenciarla y usarla para atraer más clientes y cerrar más negocios.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/prospeccion-inmobiliaria-donde-encontrar-clientes.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18 9l-6 6-4-4-3 3"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Ventas</span>
+        <h2>Prospección inmobiliaria: dónde encontrar clientes hoy</h2>
+        <p>Descubre las mejores fuentes de prospección inmobiliaria en 2026 y dónde encontrar clientes calificados para tu negocio de bienes raíces.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/embudo-ventas-inmobiliario.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18 9l-6 6-4-4-3 3"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Ventas</span>
+        <h2>El embudo de ventas inmobiliario explicado paso a paso</h2>
+        <p>Entiende el embudo de ventas inmobiliario paso a paso: desde la captación del lead hasta el cierre. Optimiza cada etapa para vender más propiedades.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+    <a href="/blog/como-fijar-precio-correcto-propiedad.html" class="blog-card">
+      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18 9l-6 6-4-4-3 3"/></svg></div>
+      <div class="blog-card-body">
+        <span class="blog-badge">Ventas</span>
+        <h2>Cómo fijar el precio correcto de una propiedad</h2>
+        <p>Aprende a fijar el precio correcto de una propiedad con métodos profesionales de valoración inmobiliaria. Evita sobrevalorar o malvender inmuebles.</p>
+        <div class="blog-card-meta">
+          <span>7 de agosto de 2026</span>
+          <span>·</span>
+          <span class="blog-card-link">Leer más →</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<footer class="blog-footer">
+  <div class="container">
+    <p>© 2026 RED Real Estate Digital · <a href="https://www.red-realestate.com/">Inicio</a> · <a href="https://www.red-realestate.com/precios.html">Precios</a> · <a href="/blog/">Blog</a></p>
+  </div>
+</footer>
+</body>
+</html>
