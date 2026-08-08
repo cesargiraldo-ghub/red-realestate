@@ -4,32 +4,32 @@
 
   <!-- PÁGINA PRINCIPAL -->
   <url>
-    <loc>https://red-realestate.com/</loc>
-    <lastmod>2026-05-22</lastmod>
+    <loc>https://www.red-realestate.com/</loc>
+    <lastmod>2026-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- PÁGINA DE BENEFICIOS -->
   <url>
-    <loc>https://red-realestate.com/beneficios.html</loc>
-    <lastmod>2026-05-22</lastmod>
+    <loc>https://www.red-realestate.com/beneficios.html</loc>
+    <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- PÁGINA DE PRECIOS -->
   <url>
-    <loc>https://red-realestate.com/precios.html</loc>
-    <lastmod>2026-05-22</lastmod>
+    <loc>https://www.red-realestate.com/precios.html</loc>
+    <lastmod>2026-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- PÁGINA SOBRE NOSOTROS -->
   <url>
-    <loc>https://red-realestate.com/sobre-nosotros.html</loc>
-    <lastmod>2026-05-22</lastmod>
+    <loc>https://www.red-realestate.com/sobre-nosotros.html</loc>
+    <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

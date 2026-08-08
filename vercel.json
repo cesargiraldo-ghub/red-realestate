@@ -1,0 +1,17 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/blog/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-admin/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-content/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-includes/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-json/:path*", "destination": "/", "permanent": true },
+    { "source": "/producto/:path*", "destination": "/precios.html", "permanent": true },
+    { "source": "/product/:path*", "destination": "/precios.html", "permanent": true },
+    { "source": "/category/:path*", "destination": "/", "permanent": true },
+    { "source": "/tag/:path*", "destination": "/", "permanent": true },
+    { "source": "/author/:path*", "destination": "/", "permanent": true },
+    { "source": "/feed/:path*", "destination": "/", "permanent": true }
+  ]
+}

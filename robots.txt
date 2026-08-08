@@ -43,4 +43,4 @@ User-agent: Slurp
 Allow: /
 
 # Sitemap
-Sitemap: https://red-realestate.com/sitemap.xml
+Sitemap: https://www.red-realestate.com/sitemap.xml
