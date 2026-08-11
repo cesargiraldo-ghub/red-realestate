@@ -104,7 +104,9 @@ a { color: inherit; text-decoration: none; }
   display: flex; flex-direction: column;
 }
 .blog-card:hover { transform: translateY(-6px); border-color: rgba(140,16,31,0.4); background: var(--surface-strong); box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
-.blog-card-img { height: 180px; background: var(--gradient-mixed); position: relative; display: flex; align-items: center; justify-content: center; }
+.blog-card-img { height: 180px; overflow: hidden; }
+.blog-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s; }
+.blog-card:hover .blog-card-img img { transform: scale(1.05); }
 .blog-card-img svg { width: 64px; height: 64px; stroke: rgba(255,255,255,0.9); opacity: 0.9; }
 .blog-card-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
 .blog-badge {
@@ -183,7 +185,7 @@ a { color: inherit; text-decoration: none; }
   </div>
   <div class="blog-grid">
     <a href="/blog/que-es-un-crm-inmobiliario" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/que-es-un-crm-inmobiliario.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">CRM</span>
         <h2>Qué es un CRM inmobiliario y por qué lo necesitas en 2026</h2>
@@ -196,7 +198,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/7-senales-inmobiliaria-necesita-crm" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/7-senales-inmobiliaria-necesita-crm.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">CRM</span>
         <h2>7 señales de que tu inmobiliaria necesita un CRM ya</h2>
@@ -209,7 +211,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/crm-vs-excel-inmobiliaria" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/crm-vs-excel-inmobiliaria.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">CRM</span>
         <h2>CRM vs Excel: por qué las inmobiliarias top ya no usan hojas de cálculo</h2>
@@ -222,7 +224,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/como-elegir-mejor-crm-inmobiliario-colombia" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/como-elegir-mejor-crm-inmobiliario-colombia.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">CRM</span>
         <h2>Cómo elegir el mejor CRM inmobiliario en Colombia</h2>
@@ -235,7 +237,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/automatizacion-seguimiento-leads" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/automatizacion-seguimiento-leads.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">CRM</span>
         <h2>Automatización de seguimiento: nunca más pierdas un lead</h2>
@@ -248,7 +250,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/fichas-comerciales-profesionales" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/fichas-comerciales-profesionales.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">CRM</span>
         <h2>Fichas comerciales profesionales: cómo presentar propiedades que venden</h2>
@@ -261,7 +263,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/inteligencia-artificial-bienes-raices" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/inteligencia-artificial-bienes-raices.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Tecnología</span>
         <h2>Inteligencia artificial en bienes raíces: guía para agentes 2026</h2>
@@ -274,7 +276,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/chatbots-ia-atencion-24-7" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/chatbots-ia-atencion-24-7.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Tecnología</span>
         <h2>Chatbots con IA: cómo atender clientes 24/7 sin agrandar tu equipo</h2>
@@ -287,7 +289,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/publicacion-portales-multiposting" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/publicacion-portales-multiposting.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Tecnología</span>
         <h2>Publicación en +80 portales con un clic: la revolución del multiposting</h2>
@@ -300,7 +302,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/ia-califica-prospectos-automaticamente" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/ia-califica-prospectos-automaticamente.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Tecnología</span>
         <h2>Cómo la IA califica tus prospectos automáticamente</h2>
@@ -313,7 +315,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/whatsapp-business-inmobiliarias" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/whatsapp-business-inmobiliarias.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Tecnología</span>
         <h2>WhatsApp Business para inmobiliarias: la herramienta que no usas bien</h2>
@@ -326,7 +328,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/futuro-agente-inmobiliario-digital" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/futuro-agente-inmobiliario-digital.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Tecnología</span>
         <h2>El futuro del agente inmobiliario es digital: tendencias 2026</h2>
@@ -339,7 +341,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/que-es-mls-inmobiliario" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/que-es-mls-inmobiliario.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Comunidad</span>
         <h2>Qué es un MLS inmobiliario y cómo multiplica tus cierres</h2>
@@ -352,7 +354,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/trabajar-en-red-compartir-inventario" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/trabajar-en-red-compartir-inventario.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Comunidad</span>
         <h2>Trabajar en RED: el poder de compartir inventario entre agentes</h2>
@@ -365,7 +367,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/comisiones-compartidas-inmobiliarias" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/comisiones-compartidas-inmobiliarias.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Comunidad</span>
         <h2>Comisiones compartidas: cómo cerrar más vendiendo propiedades de otros</h2>
@@ -378,7 +380,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/de-agente-solitario-a-comunidad" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/de-agente-solitario-a-comunidad.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Comunidad</span>
         <h2>De agente solitario a comunidad inmobiliaria: el cambio de mentalidad</h2>
@@ -391,7 +393,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/convenios-corporativos-inmobiliarios" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/convenios-corporativos-inmobiliarios.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Comunidad</span>
         <h2>Convenios corporativos: cómo acceder a clientes empresariales</h2>
@@ -404,7 +406,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/red-colaborativa-10000-propiedades" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/red-colaborativa-10000-propiedades.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Comunidad</span>
         <h2>+10.000 propiedades a tu alcance: el valor de una red colaborativa</h2>
@@ -417,7 +419,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/certificaciones-inmobiliarias-colombia" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/certificaciones-inmobiliarias-colombia.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Educación</span>
         <h2>Certificaciones inmobiliarias que valen la pena en Colombia</h2>
@@ -430,7 +432,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/como-ser-agente-inmobiliario-desde-cero" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/como-ser-agente-inmobiliario-desde-cero.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Educación</span>
         <h2>Cómo convertirte en agente inmobiliario profesional desde cero</h2>
@@ -443,7 +445,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/red-coach-mentor-ia-24-7" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/red-coach-mentor-ia-24-7.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Educación</span>
         <h2>RED Coach: tu mentor de IA disponible 24/7</h2>
@@ -456,7 +458,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/5-habilidades-agente-inmobiliario" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/5-habilidades-agente-inmobiliario.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Educación</span>
         <h2>Las 5 habilidades que todo agente inmobiliario debe dominar</h2>
@@ -469,7 +471,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/marketing-inmobiliario-estrategias" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/marketing-inmobiliario-estrategias.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Educación</span>
         <h2>Marketing inmobiliario: estrategias que sí generan clientes</h2>
@@ -482,7 +484,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/derecho-inmobiliario-basico" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/derecho-inmobiliario-basico.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Educación</span>
         <h2>Derecho inmobiliario básico: lo que todo agente debe saber</h2>
@@ -495,7 +497,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/como-captar-propiedades-exclusiva" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18 9l-6 6-4-4-3 3"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/como-captar-propiedades-exclusiva.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Ventas</span>
         <h2>Cómo captar propiedades en exclusiva: guía práctica</h2>
@@ -508,7 +510,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/tecnicas-cierre-inmobiliario" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18 9l-6 6-4-4-3 3"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/tecnicas-cierre-inmobiliario.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Ventas</span>
         <h2>Técnicas de cierre inmobiliario que funcionan en 2026</h2>
@@ -521,7 +523,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/marca-personal-agente-inmobiliario" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18 9l-6 6-4-4-3 3"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/marca-personal-agente-inmobiliario.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Ventas</span>
         <h2>Cómo construir tu marca personal como agente inmobiliario</h2>
@@ -534,7 +536,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/prospeccion-inmobiliaria-donde-encontrar-clientes" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18 9l-6 6-4-4-3 3"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/prospeccion-inmobiliaria-donde-encontrar-clientes.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Ventas</span>
         <h2>Prospección inmobiliaria: dónde encontrar clientes hoy</h2>
@@ -547,7 +549,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/embudo-ventas-inmobiliario" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18 9l-6 6-4-4-3 3"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/embudo-ventas-inmobiliario.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Ventas</span>
         <h2>El embudo de ventas inmobiliario explicado paso a paso</h2>
@@ -560,7 +562,7 @@ a { color: inherit; text-decoration: none; }
       </div>
     </a>
     <a href="/blog/como-fijar-precio-correcto-propiedad" class="blog-card">
-      <div class="blog-card-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M18 9l-6 6-4-4-3 3"/></svg></div>
+      <div class="blog-card-img"><img src="/blog/img/como-fijar-precio-correcto-propiedad.jpg" alt="" loading="lazy"></div>
       <div class="blog-card-body">
         <span class="blog-badge">Ventas</span>
         <h2>Cómo fijar el precio correcto de una propiedad</h2>

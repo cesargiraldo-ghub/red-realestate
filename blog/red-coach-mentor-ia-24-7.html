@@ -133,7 +133,8 @@ a { color: inherit; text-decoration: none; }
 .article-header .blog-badge { margin-bottom: 20px; }
 .article-header h1 { font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 20px; }
 .article-meta { display: flex; align-items: center; gap: 16px; color: var(--text-faint); font-size: 14px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
-.article-hero-img { height: 280px; border-radius: 24px; background: var(--gradient-mixed); margin: 32px 0; display: flex; align-items: center; justify-content: center; }
+.article-hero-img { height: 360px; border-radius: 24px; overflow: hidden; margin: 32px 0; }
+.article-hero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .article-hero-img svg { width: 80px; height: 80px; stroke: rgba(255,255,255,0.9); }
 .article-body { padding: 8px 0 60px; font-size: 17px; }
 .article-body h2 { font-size: 26px; font-weight: 700; margin: 40px 0 16px; letter-spacing: -0.02em; }
@@ -195,7 +196,7 @@ a { color: inherit; text-decoration: none; }
       <span>7 de agosto de 2026</span>
     </div>
   </div>
-  <div class="article-hero-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+  <div class="article-hero-img"><img src="/blog/img/red-coach-mentor-ia-24-7.jpg" alt="" loading="lazy"></div>
   <div class="article-body">
 
 <p>Aprender a usar todas las herramientas de un ecosistema inmobiliario puede ser abrumador, especialmente al principio. Por eso existe <strong>RED Coach</strong>: un instructor virtual con inteligencia artificial, disponible 24 horas al día, 7 días a la semana, para acompañarte en cada paso.</p>
