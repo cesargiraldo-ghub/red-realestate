@@ -7,6 +7,7 @@ const RED_LINKS = {
   redAcademy: 'https://redacademy.red-realestate.com/',
   redFincaraiz: 'https://redfincaraiz.com/',
   redProjects: 'https://redfincaraiz.com/propiedades/proyectos/',
+  redMarketing: 'https://marketing.red-realestate.com/',
   ayudaSocial: 'https://unhogardenuevo.red-realestate.com/',
   appStore: 'https://apps.apple.com/us/app/crm-red/id6802504715',
   googlePlay: 'https://play.google.com/store/apps/details?id=com.anonymous.ReactNative_MLS',
@@ -30,7 +31,6 @@ function renderNav(activePage = '') {
         <li><a href="sobre-nosotros.html" class="${activePage === 'sobre-nosotros' ? 'active' : ''}">Sobre Nosotros</a></li>
         <li><a href="precios.html" class="${activePage === 'precios' ? 'active' : ''}">Precios</a></li>
         <li><a href="/blog">Blog</a></li>
-        <li><a href="${RED_LINKS.ayudaSocial}" target="_blank" rel="noopener" class="nav-social-link">❤️ Ayuda Social</a></li>
         <li><a href="${RED_LINKS.login}" target="_blank" rel="noopener">Iniciar Sesión</a></li>
       </ul>
       <a href="${RED_LINKS.demo}" target="_blank" rel="noopener" class="nav-cta">Agendar Demostración →</a>
@@ -61,6 +61,7 @@ function renderFooter() {
               <li><a href="${RED_LINKS.redAcademy}" target="_blank" rel="noopener">Red Academy</a></li>
               <li><a href="${RED_LINKS.redFincaraiz}" target="_blank" rel="noopener">Red Fincaraíz</a></li>
               <li><a href="${RED_LINKS.redProjects}" target="_blank" rel="noopener">Red Projects</a></li>
+              <li><a href="${RED_LINKS.redMarketing}" target="_blank" rel="noopener">RED Marketing</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -77,7 +78,6 @@ function renderFooter() {
             <ul>
               <li><a href="${RED_LINKS.whatsapp}" target="_blank" rel="noopener">WhatsApp</a></li>
               <li><a href="/blog">Blog</a></li>
-        <li><a href="${RED_LINKS.ayudaSocial}" target="_blank" rel="noopener" class="nav-social-link">❤️ Ayuda Social</a></li>
         <li><a href="${RED_LINKS.login}" target="_blank" rel="noopener">Iniciar Sesión</a></li>
               <li><a href="${RED_LINKS.ayudaSocial}" target="_blank" rel="noopener">Ayuda Social</a></li>
               <li><a href="${RED_LINKS.demo}" target="_blank" rel="noopener">Soporte</a></li>
