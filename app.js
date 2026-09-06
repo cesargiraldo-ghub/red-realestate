@@ -74,8 +74,17 @@ function renderFooter() {
               <li><a href="${RED_LINKS.whatsapp}" target="_blank" rel="noopener">WhatsApp</a></li>
               <li><a href="/blog">Blog</a></li>
         <li><a href="${RED_LINKS.login}" target="_blank" rel="noopener">Iniciar Sesión</a></li>
+              <li><a href="${RED_LINKS.ayudaSocial}" target="_blank" rel="noopener">Ayuda Social</a></li>
               <li><a href="${RED_LINKS.demo}" target="_blank" rel="noopener">Soporte</a></li>
             </ul>
+          </div>
+          <div class="footer-col footer-apps">
+            <h4>Descarga la App</h4>
+            <p style="font-size:14px; color:var(--text-dim); margin-bottom:16px;">Lleva CRM RED en tu celular. Inmuebles, clientes y agenda desde donde estés.</p>
+            <div class="app-badges">
+              <a href="${RED_LINKS.appStore}" target="_blank" rel="noopener" aria-label="Descargar en App Store"><img src="/img/app-store-badge.png" alt="Descargar en App Store" loading="lazy"></a>
+              <a href="${RED_LINKS.googlePlay}" target="_blank" rel="noopener" aria-label="Disponible en Google Play"><img src="/img/google-play-badge.png" alt="Disponible en Google Play" loading="lazy"></a>
+            </div>
           </div>
         </div>
         <div class="footer-bottom">

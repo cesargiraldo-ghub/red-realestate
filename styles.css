@@ -281,3 +281,24 @@ footer {
   .whatsapp-float { width: 52px; height: 52px; bottom: 16px; right: 16px; }
   .whatsapp-float svg { width: 26px; height: 26px; }
 }
+
+/* ===== APP BADGES + AYUDA SOCIAL ===== */
+.app-badges { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+.app-badges a { display: inline-block; transition: transform 0.2s, opacity 0.2s; }
+.app-badges a:hover { transform: translateY(-2px); opacity: 0.85; }
+.app-badges img { height: 44px; width: auto; display: block; }
+.footer-apps p { line-height: 1.5; }
+
+/* Botón Ayuda Social en el nav */
+.nav-social-link {
+  color: var(--brand-red-glow) !important;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+.nav-social-link:hover { opacity: 0.8; }
+
+/* Badges de apps dentro de una sección de beneficios */
+.benefit-app-badges { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+.benefit-app-badges a { transition: transform 0.2s, opacity 0.2s; }
+.benefit-app-badges a:hover { transform: translateY(-2px); opacity: 0.85; }
+.benefit-app-badges img { height: 46px; width: auto; display: block; }
