@@ -302,3 +302,7 @@ footer {
 .benefit-app-badges a { transition: transform 0.2s, opacity 0.2s; }
 .benefit-app-badges a:hover { transform: translateY(-2px); opacity: 0.85; }
 .benefit-app-badges img { height: 46px; width: auto; display: block; }
+
+/* ===== ENLACES LEGALES FOOTER ===== */
+.footer-legal-links a { color: var(--text-dim); text-decoration: none; transition: color 0.2s; }
+.footer-legal-links a:hover { color: var(--brand-red-glow); }
