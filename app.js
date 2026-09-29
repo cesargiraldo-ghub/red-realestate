@@ -96,7 +96,7 @@ function renderFooter() {
         </div>
         <div class="footer-bottom">
           <span>© 2026 RED de Inversiones Inmobiliarias S.A.S. · NIT 901.467.302-2 · Todos los derechos reservados</span>
-          <span class="footer-legal-links"><a href="/terminos.html">Términos y Condiciones</a> · <a href="/privacidad.html">Política de Privacidad</a></span>
+          <span class="footer-legal-links"><a href="/terminos">Términos y Condiciones</a> · <a href="/privacidad">Política de Privacidad</a></span>
           <span>Hecho con tecnología en Colombia 🇨🇴</span>
         </div>
       </div>
