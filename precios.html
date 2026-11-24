@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Precios y Membresías · Red Real Estate · Explorer, Broker y Red Partner</title>
-<meta name="description" content="Conoce los planes de Red Real Estate: Explorer ($189.000), Broker ($299.000) y Red Partner ($390.000). CRM, MLS, +70 portales, capacitaciones y mucho más. Sin cláusulas de permanencia.">
+<meta name="description" content="Planes RED desde $189.000/mes: CRM con IA, portales, MLS, RED Academy y mentoría. Prueba CRM RED gratis 15 días.">
 <meta name="keywords" content="precios CRM inmobiliario, membresía inmobiliaria Colombia, planes Red Real Estate, software inmobiliario precio, CRM agentes inmobiliarios, MLS Colombia precio, plataforma inmobiliaria mensual, Red Explorer, Red Broker, Red Partner">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://red-realestate.com/precios.html">
@@ -49,43 +49,28 @@ fbq('init', '574846248420695');fbq('track', 'PageView');fbq('track', 'ViewConten
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://assets.cdn.filesafe.space" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
 <style>
-  .page-hero { padding: 160px 0 60px; text-align: center; }
-  .page-hero h1 { margin-bottom: 20px; }
-  .page-hero p { color: var(--text-dim); font-size: 18px; max-width: 600px; margin: 0 auto 32px; }
-  .billing-toggle { display: inline-flex; background: var(--surface); border: 1px solid var(--border); border-radius: 100px; padding: 6px; margin-bottom: 48px; backdrop-filter: var(--blur); }
-  .toggle-btn { padding: 10px 24px; border: none; background: transparent; color: var(--text-dim); font-weight: 600; font-size: 14px; cursor: pointer; border-radius: 100px; transition: all 0.3s; font-family: inherit; }
-  .toggle-btn.active { background: var(--gradient-brand); color: white; box-shadow: 0 4px 20px rgba(140, 16, 31, 0.4); }
-  .toggle-discount { font-size: 11px; background: rgba(34, 197, 94, 0.2); color: #22c55e; padding: 2px 8px; border-radius: 100px; margin-left: 6px; }
-  .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 80px; }
-  .plan { background: var(--surface); backdrop-filter: var(--blur); border: 1px solid var(--border); border-radius: 24px; padding: 40px 32px; position: relative; transition: all 0.3s; display: flex; flex-direction: column; }
-  .plan:hover { border-color: var(--border-strong); transform: translateY(-4px); }
-  .plan.featured { border: 1px solid rgba(140, 16, 31, 0.4); background: linear-gradient(135deg, rgba(140, 16, 31, 0.08) 0%, rgba(56, 63, 69, 0.05) 100%); box-shadow: 0 20px 60px rgba(140, 16, 31, 0.15); }
-  .plan-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--gradient-brand); color: white; font-size: 11px; font-weight: 700; padding: 6px 16px; border-radius: 100px; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 20px rgba(140, 16, 31, 0.5); }
-  .plan-name { font-size: 14px; font-weight: 600; color: var(--brand-red-glow); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px; }
-  .plan-desc { color: var(--text-dim); font-size: 14px; line-height: 1.6; margin-bottom: 28px; min-height: 60px; }
-  .plan-price { display: flex; align-items: baseline; gap: 4px; margin-bottom: 8px; }
-  .plan-price-num { font-size: 42px; font-weight: 700; letter-spacing: -0.03em; color: var(--text); }
-  .plan-price-period { color: var(--text-dim); font-size: 14px; }
-  .plan-users { font-size: 13px; color: var(--text-dim); margin-bottom: 24px; }
-  .plan-cta { display: flex; justify-content: center; width: 100%; margin-bottom: 8px; }
-  .plan-cta .btn { width: 100%; justify-content: center; }
-  .plan-note { text-align: center; font-size: 12px; color: var(--text-faint); margin-bottom: 28px; }
-  .plan-features { list-style: none; border-top: 1px solid var(--border); padding-top: 24px; flex: 1; }
-  .plan-features-title { font-size: 12px; color: var(--text-faint); text-transform: uppercase; letter-spacing: 1.2px; font-weight: 600; margin-bottom: 16px; }
-  .plan-features li { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; font-size: 14px; color: var(--text-dim); line-height: 1.5; }
-  .plan-features li svg { flex-shrink: 0; width: 18px; height: 18px; color: var(--brand-red-glow); margin-top: 1px; }
-  .faq { max-width: 800px; margin: 0 auto; }
-  .faq-item { background: var(--surface); backdrop-filter: var(--blur); border: 1px solid var(--border); border-radius: 16px; margin-bottom: 12px; overflow: hidden; transition: all 0.3s; }
-  .faq-item:hover { border-color: var(--border-strong); }
-  .faq-item summary { padding: 20px 24px; cursor: pointer; font-weight: 600; font-size: 16px; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
-  .faq-item summary::-webkit-details-marker { display: none; }
-  .faq-item summary::after { content: '+'; font-size: 24px; color: var(--brand-red-glow); transition: transform 0.3s; font-weight: 300; flex-shrink: 0; }
-  .faq-item[open] summary::after { transform: rotate(45deg); }
-  .faq-item .faq-content { padding: 0 24px 20px; color: var(--text-dim); font-size: 15px; line-height: 1.65; }
-  @media (max-width: 900px) { .plans { grid-template-columns: 1fr; } }
+  /* ===== Página de precios (mockup aprobado, scopeado al contenedor) ===== */
+  html{scroll-behavior:smooth}
+  .precios-mockup{background:#F6F5F2;color:#111;font-family:Inter,system-ui,sans-serif}
+  .precios-mockup a{color:#B3121F}
+  .precios-mockup a:hover{color:#8A0E18}
+  .precios-mockup h1,.precios-mockup h2,.precios-mockup h3{font-family:'Space Grotesk',Inter,system-ui,sans-serif}
+  @media (max-width:640px){
+    .precios-mockup h1{font-size:38px!important}
+    .precios-mockup h2{font-size:30px!important}
+    .precios-mockup #calculadora>div{padding:28px!important}
+  }
+  /* Banner mentoría (conserva lo que ya tenía la página) */
+  .mentoria-banner{max-width:920px;margin:0 auto;padding:0 24px 72px}
+  .mentoria-banner__inner{background:linear-gradient(135deg,#8c101f 0%,#b3121f 100%);border-radius:20px;padding:32px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;box-shadow:0 20px 60px rgba(140,16,31,.25)}
+  .mentoria-banner__text{color:#fff}
+  .mentoria-banner__text strong{display:block;font-family:'Space Grotesk',Inter,sans-serif;font-size:22px;margin-bottom:6px}
+  .mentoria-banner__text span{color:#ffd9dd;font-size:15px}
+  .mentoria-banner__cta{display:inline-flex;align-items:center;min-height:48px;padding:0 26px;border-radius:10px;background:#fff;color:#8A0E18!important;text-decoration:none;font-weight:700;white-space:nowrap}
+  .mentoria-banner__cta:hover{color:#8A0E18!important;opacity:.9}
 </style>
 </head>
 <body data-page="precios">
@@ -101,157 +86,411 @@ fbq('init', '574846248420695');fbq('track', 'PageView');fbq('track', 'ViewConten
 
 <div id="nav-placeholder"></div>
 
-<main class="container">
-  <section class="page-hero">
-    <span class="section-tag">Precios</span>
-    <h1>Precios simples y <span class="accent">escalables.</span></h1>
-    <p>Explora en detalle cada uno de nuestros planes y conoce todas sus características y beneficios.</p>
-    <div class="billing-toggle">
-      <button class="toggle-btn active" onclick="togglePrice('monthly')">Mensual</button>
-      <button class="toggle-btn" onclick="togglePrice('annual')">Anual <span class="toggle-discount">-17%</span></button>
+<main>
+<div class="precios-mockup">
+<!-- HERO -->
+<section style="background: #0F1116; color: #FFFFFF; padding: 72px 24px 80px">
+<div style="max-width: 920px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px">
+<span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #FF8A93; font-weight: 600">Precios simples · Sin letra pequeña</span>
+<h1 style="margin: 0; font-size: 56px; line-height: 1.05; letter-spacing: -0.02em">No es un CRM.<br>Es tu negocio inmobiliario completo.</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: #C3C7D0; max-width: 720px">Tecnología, automatización, formación, MLS y comunidad en una sola membresía. Por menos de lo que hoy pagas en herramientas sueltas.</p>
+<p style="margin: 0; font-size: 14px; color: #9EA3AE">14 años en el sector · Exfranquicia Keller Williams Colombia · [N] agentes activos en la comunidad</p>
+</div>
+</section>
+
+<!-- TODOS LOS PLANES INCLUYEN -->
+<section id="incluye" style="padding: 80px 24px 0">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px; text-align: center">
+<span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #B3121F; font-weight: 700">Desde el plan Explorer</span>
+<h2 style="margin: 0; font-size: 42px; letter-spacing: -0.01em">Todos los planes incluyen</h2>
+<p style="margin: 0; font-size: 17px; color: #5A5F6B">Lo mismo para todos. Los planes solo cambian en usuarios, inmuebles, horas de mentoría y beneficios de socio.</p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: stretch">
+
+<!-- Tecnología -->
+<div style="flex: 2 1 600px; min-width: 0; background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="width: 44px; height: 44px; border-radius: 10px; background: #FFF1F2; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B3121F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8M12 16v4"></path></svg></div>
+<h3 style="margin: 0; font-size: 22px">Tecnología</h3>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px 24px; font-size: 15px; line-height: 1.45">
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>CRM avanzado con IA</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Integración con los principales portales nacionales e internacionales</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Leads automáticos de portales en CRM RED, ilimitados</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>MLS con más de 12.000 inmuebles compartidos</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Informes a propietarios</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Análisis comparativo de mercado (ACM)</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Fichas modernas y personalizables</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Posts personalizables para redes sociales</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Conexión a Facebook, Instagram, TikTok, YouTube y LinkedIn</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Chatbot con IA y WhatsApp automatizado 24/7</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Gestión de reputación en Google</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Creador de sitios web ilimitados, formularios y encuestas</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Dominio gratis, o hosting gratis si ya tienes dominio</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Automatizaciones y flujos de procesos</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Informes personalizados</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Firmas electrónicas y calendario de autoagendamiento</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>API: hasta 28.000 peticiones diarias</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Clientes ilimitados</span></li>
+</ul>
+<p style="margin: 0; font-size: 15px; font-weight: 600; color: #B3121F">…y muchas funciones más.</p>
+</div>
+
+<!-- Educación + Soporte -->
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="width: 44px; height: 44px; border-radius: 10px; background: #FFF1F2; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B3121F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5-10-5z"></path><path d="M6 11v5c3 2 9 2 12 0v-5"></path></svg></div>
+<h3 style="margin: 0; font-size: 22px">Educación · RED Academy</h3>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.45">
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Más de 5 certificaciones: derecho inmobiliario, marketing, inteligencia artificial, productividad y administración de arrendamientos</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Talleres semanales de productividad y de marketing en Meta Ads</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Consultorio jurídico semanal</span></li>
+</ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="width: 44px; height: 44px; border-radius: 10px; background: #FFF1F2; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B3121F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0116 0v2"></path><rect x="3" y="14" width="4" height="6" rx="1.5"></rect><rect x="17" y="14" width="4" height="6" rx="1.5"></rect></svg></div>
+<h3 style="margin: 0; font-size: 22px">Soporte y servicios</h3>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.45">
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Soporte de lunes a viernes por WhatsApp y tickets</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Mentoría y soporte personalizado: las horas que te da tu plan, y las agendas tú mismo</span></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<!-- App móvil -->
+<div style="background: #0F1116; color: #FFFFFF; border-radius: 16px; padding: 28px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px">
+<div style="width: 52px; height: 52px; border-radius: 12px; background: #D7192A; display: flex; align-items: center; justify-content: center; flex: none"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"></rect><path d="M11 18h2"></path></svg></div>
+<div style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 4px">
+<strong style="font-size: 20px">Apps de CRM RED y RED HUB para Android e iOS</strong>
+<span style="font-size: 15px; color: #C3C7D0">Gestiona todo desde el móvil: inmuebles, clientes, leads, citas y mensajes.</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PLANES -->
+<section id="planes" style="padding: 96px 24px 0">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+<h2 style="margin: 0; font-size: 42px; letter-spacing: -0.01em">Elige tu plan</h2>
+<p style="margin: 0; font-size: 17px; color: #5A5F6B">Todo lo anterior viene en los tres. Esto es lo que cambia:</p>
+<div role="group" aria-label="Frecuencia de pago" style="display: flex; gap: 6px; padding: 6px; background: #0F1116; border-radius: 999px">
+<button type="button" id="btn-mensual" class="tg">Mensual</button>
+<button type="button" id="btn-anual" class="tg">Anual · 2 meses gratis</button>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; align-items: stretch">
+
+<!-- Explorer -->
+<article style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px; box-shadow: 0 8px 30px rgba(15,17,22,0.08)">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: 26px">Explorer</h3>
+<p style="margin: 0; color: #5A5F6B; font-size: 15px">Para agentes inmobiliarios o empresas pequeñas.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700"><span data-k="p1"></span></span><span style="color: #5A5F6B">COP/mes</span></div>
+<span style="font-size: 14px; color: #5A5F6B"><span data-k="n1"></span></span>
+</div>
+<a href="https://app.crmred.co/registro" style="display: flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 10px; background: #111318; color: #FFFFFF; text-decoration: none; font-weight: 600">Regístrate gratis 15 días</a>
+<a href="https://app.crmred.co/registro" style="margin-top: -8px; display: flex; align-items: center; justify-content: center; min-height: 44px; font-size: 14px; font-weight: 600">Conoce CRM RED ahora mismo →</a>
+<p style="margin: -12px 0 0; text-align: center; font-size: 13px; color: #5A5F6B; line-height: 1.45">Prueba de 15 días de CRM RED. RED HUB y RED Academy se activan con el pago.</p>
+<p style="margin: 0; font-size: 14px; font-weight: 600"><a href="#incluye">Todo lo que incluyen los planes</a>, con:</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.45">
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span><strong>Hasta 100 inmuebles</strong></span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>1 usuario + 1 agente</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Mentoría y soporte personalizado: <strong>4 horas al mes</strong></span></li>
+</ul>
+<p style="margin: auto 0 0; padding-top: 16px; border-top: 1px solid #EDEBE6; font-size: 13px; color: #5A5F6B">Agente adicional: $10.000/mes · Sin permanencia</p>
+</article>
+
+<!-- Broker -->
+<article style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px; box-shadow: 0 8px 30px rgba(15,17,22,0.08)">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: 26px">Broker</h3>
+<p style="margin: 0; color: #5A5F6B; font-size: 15px">Para líderes y equipos más grandes.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700"><span data-k="p2"></span></span><span style="color: #5A5F6B">COP/mes</span></div>
+<span style="font-size: 14px; color: #5A5F6B"><span data-k="n2"></span></span>
+</div>
+<a href="https://api.red-realestate.com/widget/bookings/agendar_cita_red" style="display: flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 10px; background: #111318; color: #FFFFFF; text-decoration: none; font-weight: 600">Agenda tu cita</a>
+<a href="#planes" style="margin-top: -8px; display: flex; align-items: center; justify-content: center; min-height: 44px; font-size: 14px; font-weight: 600">o escríbenos por WhatsApp</a>
+<p style="margin: 0; font-size: 14px; font-weight: 600"><a href="#incluye">Todo lo que incluyen los planes</a>, con:</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.45">
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span><strong>Inmuebles ilimitados</strong></span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>1 usuario admin + 10 usuarios agentes</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Portales internacionales: publicación en más de 80 países</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Mentoría y soporte personalizado: <strong>8 horas al mes</strong></span></li>
+</ul>
+<p style="margin: auto 0 0; padding-top: 16px; border-top: 1px solid #EDEBE6; font-size: 13px; color: #5A5F6B">Agente adicional: $10.000/mes · Sin permanencia</p>
+</article>
+
+<!-- RED Partner (más popular) -->
+<article style="background: #FFFFFF; border: 2px solid #D7192A; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px; box-shadow: 0 16px 40px rgba(215,25,42,0.16); position: relative">
+<span style="position: absolute; top: -14px; left: 32px; background: #D7192A; color: #FFFFFF; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px">Más popular</span>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: 26px">RED Partner</h3>
+<p style="margin: 0; color: #5A5F6B; font-size: 15px">Para agentes o inmobiliarias que quieren ser socios de RED.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700"><span data-k="p3"></span></span><span style="color: #5A5F6B">COP/mes</span></div>
+<span style="font-size: 14px; color: #5A5F6B"><span data-k="n3"></span></span>
+</div>
+<a href="https://api.red-realestate.com/widget/bookings/agendar_cita_red" style="display: flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 10px; background: #D7192A; color: #FFFFFF; text-decoration: none; font-weight: 600">Quiero ser socio</a>
+<a href="https://api.red-realestate.com/widget/bookings/agendar_cita_red" style="margin-top: -8px; display: flex; align-items: center; justify-content: center; min-height: 44px; font-size: 14px; font-weight: 600">Habla con el equipo de ventas</a>
+<p style="margin: 0; font-size: 14px; font-weight: 600"><a href="#incluye">Todo lo que incluyen los planes</a>, con:</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.45">
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span><strong>Inmuebles ilimitados</strong></span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>1 usuario admin + 5 usuarios agentes</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Portales internacionales: publicación en más de 80 países</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span><strong>Publicación en portales nacionales incluida</strong> (hasta 100 inmuebles)</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Acceso a oficinas, coworking y sala de juntas</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Salones de capacitación para tus equipos</span></li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A7F4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><path d="M5 12l5 5L20 7"></path></svg><span>Mentoría y soporte personalizado: <strong>10 horas al mes</strong></span></li>
+</ul>
+<div style="background: #FFF1F2; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 14px; font-weight: 700; color: #8A0E18">Programa de referidos con ingresos residuales</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.45">Con <strong>5 referidos activos</strong>, tu membresía es <strong>gratis</strong>.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.45">Con <strong>más de 25 referidos</strong> puedes ganar <strong>más de $2.000.000 al mes</strong>.*</p>
+<a href="#planes" style="font-size: 14px; font-weight: 600">Ver plan de compensación RED Partner →</a>
+<p style="margin: 0; font-size: 12px; color: #5A5F6B; line-height: 1.45">*Según el plan de compensación RED Partner. Los ingresos dependen de tus referidos activos.</p>
+</div>
+<p style="margin: auto 0 0; padding-top: 16px; border-top: 1px solid #EDEBE6; font-size: 13px; color: #5A5F6B">Agente adicional: $10.000/mes · Permanencia mínima de 3 meses</p>
+</article>
+
+</div>
+<p style="margin: 0; text-align: center; font-size: 13px; color: #5A5F6B">Precios en pesos colombianos · Los precios no llevan IVA · Cambia de plan cuando quieras sin perder tus datos</p>
+</div>
+</section>
+
+<!-- LO QUE TE COSTARÍA POR SEPARADO -->
+<section style="padding: 96px 24px 0">
+<div style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 10px; text-align: center">
+<h2 style="margin: 0; font-size: 38px; letter-spacing: -0.01em">Lo que te costaría armarlo por tu cuenta</h2>
+<p style="margin: 0; font-size: 17px; color: #5A5F6B">Un CRM es solo una pieza. Esto es lo que reemplaza una membresía RED Explorer.</p>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 16px; overflow: hidden">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; padding: 18px 28px; border-bottom: 1px solid #EDEBE6; font-size: 16px"><span style="flex: 1 1 360px">CRM inmobiliario + conexión a portales</span><span style="color: #4A4F5A; white-space: nowrap">desde $170.000</span></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; padding: 18px 28px; border-bottom: 1px solid #EDEBE6; font-size: 16px"><span style="flex: 1 1 360px">Automatización de WhatsApp, email y chatbot con IA <span style="color: #5A5F6B; font-size: 14px">(USD 97/mes)</span></span><span style="color: #4A4F5A; white-space: nowrap"><span data-k="cAuto"></span></span></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; padding: 18px 28px; border-bottom: 1px solid #EDEBE6; font-size: 16px"><span style="flex: 1 1 360px">Dominio y hosting <span style="color: #5A5F6B; font-size: 14px">(USD 50/año) · En RED: dominio gratis, o hosting gratis si ya tienes dominio</span></span><span style="color: #4A4F5A; white-space: nowrap"><span data-k="cWeb"></span></span></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; padding: 18px 28px; border-bottom: 1px solid #EDEBE6; font-size: 16px"><span style="flex: 1 1 360px">Cursos y certificaciones <span style="color: #5A5F6B; font-size: 14px">(4 en vivo al año de $3.000.000 + pregrabados)</span></span><span style="color: #4A4F5A; white-space: nowrap"><span data-k="cCursos"></span></span></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; padding: 18px 28px; border-bottom: 1px solid #EDEBE6; font-size: 16px"><span style="flex: 1 1 360px">Talleres semanales de marketing y productividad <span style="color: #5A5F6B; font-size: 14px">(2 h/semana con mentor a $150.000/h)</span></span><span style="color: #4A4F5A; white-space: nowrap"><span data-k="cTalleres"></span></span></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; padding: 18px 28px; border-bottom: 1px solid #EDEBE6; font-size: 16px"><span style="flex: 1 1 360px">Consultorio jurídico <span style="color: #5A5F6B; font-size: 14px">(1 h/semana con abogada a $250.000/h)</span></span><span style="color: #4A4F5A; white-space: nowrap"><span data-k="cJuridico"></span></span></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; padding: 18px 28px; border-bottom: 1px solid #EDEBE6; font-size: 16px"><span style="flex: 1 1 360px">Mentoría personalizada <span style="color: #5A5F6B; font-size: 14px">(4 h/mes a $150.000/h)</span></span><span style="color: #4A4F5A; white-space: nowrap"><span data-k="cMentoria"></span></span></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; padding: 20px 28px; background: #F6F5F2; font-size: 17px; font-weight: 600"><span>Total armándolo por separado</span><span style="white-space: nowrap; text-decoration: line-through; color: #4A4F5A"><span data-k="cTotal"></span>/mes</span></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 16px; padding: 22px 28px; background: #0F1116; color: #FFFFFF"><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 18px; font-weight: 700">Membresía RED Explorer</span><span style="font-size: 14px; color: #FF8A93; font-weight: 600">Ahorras <span data-k="ahorro"></span> al mes</span></span><span style="white-space: nowrap; font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700"><span data-k="p1"></span>/mes</span></div>
+</div>
+<p style="margin: -12px 0 0; text-align: center; font-size: 13px; color: #5A5F6B">Talleres y consultorio jurídico son sesiones grupales. Valores en dólares convertidos con una TRM de <span data-k="trmLabel"></span>.</p>
+</div>
+</section>
+
+<!-- CALCULADORA -->
+<section id="calculadora" style="padding: 96px 24px 0">
+<div style="max-width: 1100px; margin: 0 auto; background: #0F1116; color: #FFFFFF; border-radius: 24px; padding: 48px; display: flex; flex-wrap: wrap; gap: 40px">
+<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #FF8A93; font-weight: 600">Calculadora</span>
+<h2 style="margin: 0; font-size: 34px; line-height: 1.15">¿Cuánto dejas en la mesa con un split tradicional?</h2>
+<p style="margin: 0; color: #C3C7D0; font-size: 16px; line-height: 1.55">En RED te quedas con el 100% de tu comisión. Haz la cuenta con un negocio típico tuyo.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span id="lbl-com" style="font-size: 14px; font-weight: 600; color: #D4D7DE">Tu comisión por negocio</span>
+<div role="group" aria-labelledby="lbl-com" style="display: flex; flex-wrap: wrap; gap: 8px">
+<span id="coms" style="display: contents"></span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span id="lbl-split" style="font-size: 14px; font-weight: 600; color: #D4D7DE">Lo que te retiene tu inmobiliaria hoy</span>
+<div role="group" aria-labelledby="lbl-split" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<span id="splits" style="display: contents"></span>
+<label for="pct-otro" style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: #D4D7DE; margin-left: 4px">Otro
+<input id="pct-otro" type="number" min="0" max="100" step="1" value="30" style="width: 72px; min-height: 44px; box-sizing: border-box; padding: 0 10px; border-radius: 10px; border: 1px solid #3A3F4B; background: #1C1F27; color: #FFFFFF; font: 600 15px Inter, sans-serif">%</label>
+</div>
+</div>
+</div>
+<div style="flex: 1 1 340px; background: #1C1F27; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 20px; justify-content: center">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 14px; color: #C3C7D0">Dejas por cada negocio (<span data-k="pctLabel"></span>)</span>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 44px; font-weight: 700; color: #FF8A93"><span data-k="lost"></span></span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 14px; color: #C3C7D0">Con 1 negocio al mes, en un año</span>
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700"><span data-k="lostYear"></span></span>
+</div>
+<p style="margin: 0; padding-top: 20px; border-top: 1px solid #2E323C; font-size: 16px; line-height: 1.5; color: #E6E8EC">Con lo que dejas en <strong>un solo negocio</strong> pagas <strong><span data-k="months"></span></strong> de RED Explorer.</p>
+</div>
+</div>
+</section>
+
+<!-- COMPARAR -->
+<section id="comparar" style="padding: 96px 24px 0">
+<div style="max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+<h2 style="margin: 0; font-size: 38px; text-align: center">Compara los planes</h2>
+<div style="overflow-x: auto; background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 16px">
+<table style="width: 100%; min-width: 720px; border-collapse: collapse; font-size: 15px">
+<thead>
+<tr style="text-align: left; background: #F6F5F2">
+<th scope="col" style="padding: 18px 24px; font-weight: 600">Incluye</th>
+<th scope="col" style="padding: 18px 16px; font-weight: 700; text-align: center">Explorer</th>
+<th scope="col" style="padding: 18px 16px; font-weight: 700; text-align: center">Broker</th>
+<th scope="col" style="padding: 18px 16px; font-weight: 700; text-align: center; color: #B3121F">RED Partner</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Usuarios incluidos</th><td style="text-align: center">1 + 1 agente</td><td style="text-align: center">1 admin + 10</td><td style="text-align: center">1 admin + 5</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Inmuebles en CRM</th><td style="text-align: center">Hasta 100</td><td style="text-align: center">Ilimitados</td><td style="text-align: center">Ilimitados</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Clientes</th><td style="text-align: center">Ilimitados</td><td style="text-align: center">Ilimitados</td><td style="text-align: center">Ilimitados</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">CRM avanzado con IA</th><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Integración con portales nacionales e internacionales</th><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Leads automáticos de portales</th><td style="text-align: center">Ilimitados</td><td style="text-align: center">Ilimitados</td><td style="text-align: center">Ilimitados</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">MLS con más de 12.000 inmuebles</th><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Redes sociales y reputación en Google</th><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Firmas electrónicas y autoagendamiento</th><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Página web</th><td style="text-align: center">Dominio o hosting gratis</td><td style="text-align: center">Dominio o hosting gratis</td><td style="text-align: center">Dominio o hosting gratis</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">API</th><td style="text-align: center">28.000 peticiones/día</td><td style="text-align: center">28.000 peticiones/día</td><td style="text-align: center">28.000 peticiones/día</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">RED Academy: más de 5 certificaciones</th><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Talleres semanales y consultorio jurídico (grupales)</th><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Mentoría y soporte personalizado</th><td style="text-align: center">4 h/mes</td><td style="text-align: center">8 h/mes</td><td style="text-align: center">10 h/mes</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Publicación en más de 80 países</th><td style="text-align: center; color: #5A5F6B">—</td><td style="text-align: center">Sí</td><td style="text-align: center">Sí</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Publicación en portales nacionales incluida</th><td style="text-align: center; color: #5A5F6B">—</td><td style="text-align: center; color: #5A5F6B">—</td><td style="text-align: center">Hasta 100 inmuebles</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Oficinas, coworking y salones de capacitación</th><td style="text-align: center; color: #5A5F6B">—</td><td style="text-align: center; color: #5A5F6B">—</td><td style="text-align: center">Sí</td></tr>
+<tr style="border-top: 1px solid #EDEBE6"><th scope="row" style="padding: 14px 24px; text-align: left; font-weight: 500">Programa de referidos con ingresos residuales</th><td style="text-align: center; color: #5A5F6B">—</td><td style="text-align: center; color: #5A5F6B">—</td><td style="text-align: center">Sí</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section style="padding: 96px 24px 0">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+<h2 style="margin: 0; font-size: 38px; text-align: center">Agentes que ya crecen con RED</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px">
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #B3121F">Duplicó sus cierres</span>
+<blockquote style="margin: 0; font-size: 16px; line-height: 1.55">“Las capacitaciones, el CRM y el apoyo del equipo me han permitido duplicar mis cierres mensuales.”</blockquote>
+<figcaption style="display: flex; align-items: center; gap: 12px; font-size: 14px; color: #4A4F5A"><span aria-hidden="true" style="width: 40px; height: 40px; border-radius: 999px; background: #0F1116; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700">JB</span><span><strong style="color: #111318">José Botero</strong><br>Agente inmobiliario · Cali</span></figcaption>
+</figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #B3121F">Vende más, con sistema</span>
+<blockquote style="margin: 0; font-size: 16px; line-height: 1.55">“En RED aprendí a construir una marca personal y a organizar mi negocio. Hoy vendo más y tengo un sistema que me respalda.”</blockquote>
+<figcaption style="display: flex; align-items: center; gap: 12px; font-size: 14px; color: #4A4F5A"><span aria-hidden="true" style="width: 40px; height: 40px; border-radius: 999px; background: #0F1116; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700">OG</span><span><strong style="color: #111318">Olga Marcela Guerra</strong><br>Agente inmobiliaria · Bogotá</span></figcaption>
+</figure>
+<figure style="margin: 0; background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<span style="font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #B3121F">Primeros cierres en menos de 6 meses</span>
+<blockquote style="margin: 0; font-size: 16px; line-height: 1.55">“Entré sin experiencia y en menos de 6 meses cerré mis primeras propiedades.”</blockquote>
+<figcaption style="display: flex; align-items: center; gap: 12px; font-size: 14px; color: #4A4F5A"><span aria-hidden="true" style="width: 40px; height: 40px; border-radius: 999px; background: #0F1116; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700">MM</span><span><strong style="color: #111318">Matilde Montoya</strong><br>Agente inmobiliaria · Medellín</span></figcaption>
+</figure>
+</div>
+<a href="https://www.red-realestate.com/" style="align-self: center; display: inline-flex; align-items: center; min-height: 44px; font-weight: 600">Ver más testimonios en video →</a>
+</div>
+</section>
+
+<!-- PRUEBA GRATIS + FAQ -->
+<section id="faq" style="padding: 96px 24px 0">
+<div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px">
+<div style="background: #FFF1F2; border: 1px solid #F5C6CB; border-radius: 16px; padding: 28px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px">
+<svg role="img" aria-label="Prueba gratis" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#B3121F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"></path><path d="M8.5 12l2.5 2.5 4.5-5"></path></svg>
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 4px">
+<strong style="font-size: 18px">Conoce CRM RED gratis por 15 días</strong>
+<span style="font-size: 15px; color: #4A4F5A; line-height: 1.5">Regístrate y pruébalo con tus inmuebles y clientes reales. RED HUB y RED Academy se activan al pagar tu membresía.</span>
+</div>
+<a href="https://app.crmred.co/registro" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 10px; background: #111318; color: #FFFFFF; text-decoration: none; font-weight: 600">Regístrate gratis</a>
+</div>
+<h2 style="margin: 0; font-size: 34px">Preguntas frecuentes</h2>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<details style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 12px; padding: 20px 24px"><summary style="font-weight: 600; font-size: 16px; cursor: pointer">¿Qué es RED Real Estate y cómo funciona?</summary><p style="margin: 12px 0 0; color: #4A4F5A; line-height: 1.55">Es una comunidad y plataforma digital para agentes, empresas y constructoras del sector inmobiliario. En un solo lugar publicas inmuebles, usas tecnología con IA, te formas con RED Academy y haces crecer tu negocio.</p></details>
+<details style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 12px; padding: 20px 24px"><summary style="font-weight: 600; font-size: 16px; cursor: pointer">¿Quiénes pueden unirse?</summary><p style="margin: 12px 0 0; color: #4A4F5A; line-height: 1.55">Agentes independientes, inmobiliarias, constructoras, emprendedores que empiezan en el sector y profesionales que quieren crecer.</p></details>
+<details style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 12px; padding: 20px 24px"><summary style="font-weight: 600; font-size: 16px; cursor: pointer">¿Cómo funciona la prueba gratis?</summary><p style="margin: 12px 0 0; color: #4A4F5A; line-height: 1.55">Tienes 15 días para conocer CRM RED. Te registras en <a href="https://app.crmred.co/registro">app.crmred.co/registro</a>. RED HUB y RED Academy se activan cuando pagas tu membresía.</p></details>
+<details style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 12px; padding: 20px 24px"><summary style="font-weight: 600; font-size: 16px; cursor: pointer">¿Tengo que firmar permanencia?</summary><p style="margin: 12px 0 0; color: #4A4F5A; line-height: 1.55">Explorer y Broker no tienen permanencia: cancelas cuando quieras. RED Partner tiene una permanencia mínima de 3 meses.</p></details>
+<details style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 12px; padding: 20px 24px"><summary style="font-weight: 600; font-size: 16px; cursor: pointer">¿Los precios llevan IVA?</summary><p style="margin: 12px 0 0; color: #4A4F5A; line-height: 1.55">No. Los precios publicados no llevan IVA.</p></details>
+<details style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 12px; padding: 20px 24px"><summary style="font-weight: 600; font-size: 16px; cursor: pointer">¿Si pago la anualidad, tengo algún beneficio?</summary><p style="margin: 12px 0 0; color: #4A4F5A; line-height: 1.55">Sí: pagas 10 meses y te llevas 12. Además, con el pago anual de Broker o RED Partner recibes gratis la certificación MASTER AGENT.</p></details>
+<details style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 12px; padding: 20px 24px"><summary style="font-weight: 600; font-size: 16px; cursor: pointer">¿Cómo agendo mis mentorías personalizadas?</summary><p style="margin: 12px 0 0; color: #4A4F5A; line-height: 1.55">Las agendas tú mismo desde el calendario de autoagendamiento: 4 horas al mes en Explorer, 8 en Broker y 10 en RED Partner.</p></details>
+<details style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 12px; padding: 20px 24px"><summary style="font-weight: 600; font-size: 16px; cursor: pointer">¿Puedo ganar dinero recomendando a otros agentes o empresas?</summary><p style="margin: 12px 0 0; color: #4A4F5A; line-height: 1.55">Sí, con el programa de referidos de RED Partner. Con 5 referidos activos tu membresía es gratis, y recibes ingresos recurrentes por los miembros que invitas. Revisa el plan de compensación RED Partner.</p></details>
+<details style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 12px; padding: 20px 24px"><summary style="font-weight: 600; font-size: 16px; cursor: pointer">¿Cómo publico un inmueble en RED?</summary><p style="margin: 12px 0 0; color: #4A4F5A; line-height: 1.55">Desde CRM RED subes los datos, fotos y videos del inmueble y lo envías a los portales. Tienes tutoriales y soporte de lunes a viernes por WhatsApp y tickets.</p></details>
+<details style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 12px; padding: 20px 24px"><summary style="font-weight: 600; font-size: 16px; cursor: pointer">¿RED tiene oficina física?</summary><p style="margin: 12px 0 0; color: #4A4F5A; line-height: 1.55">Sí. Los miembros RED Partner tienen acceso a coworking, salas de juntas, salones de capacitación y oficinas en varias ciudades de Colombia.</p></details>
+<details style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 12px; padding: 20px 24px"><summary style="font-weight: 600; font-size: 16px; cursor: pointer">¿Cuánto cuesta un agente adicional?</summary><p style="margin: 12px 0 0; color: #4A4F5A; line-height: 1.55">$10.000 COP al mes por agente.</p></details>
+<details style="background: #FFFFFF; border: 1px solid #E3E1DC; border-radius: 12px; padding: 20px 24px"><summary style="font-weight: 600; font-size: 16px; cursor: pointer">¿Cómo empiezo?</summary><p style="margin: 12px 0 0; color: #4A4F5A; line-height: 1.55">Prueba CRM RED gratis 15 días, o <a href="https://api.red-realestate.com/widget/bookings/agendar_cita_red">agenda una cita</a> con nuestro equipo para elegir el plan correcto.</p></details>
+</div>
+</div>
+</section>
+
+<!-- CTA FINAL -->
+<section style="padding: 96px 24px">
+<div style="max-width: 1100px; margin: 0 auto; background: #D7192A; color: #FFFFFF; border-radius: 24px; padding: 56px 40px; display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center">
+<h2 style="margin: 0; font-size: 40px; line-height: 1.1">Deja de pagar por herramientas sueltas.</h2>
+<p style="margin: 0; font-size: 18px; max-width: 620px; line-height: 1.5">Conoce CRM RED gratis por 15 días o agenda una cita con nuestro equipo.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center">
+<a href="https://app.crmred.co/registro" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 10px; background: #FFFFFF; color: #8A0E18; text-decoration: none; font-weight: 700">Regístrate gratis 15 días</a>
+<a href="https://api.red-realestate.com/widget/bookings/agendar_cita_red" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 10px; border: 2px solid #FFFFFF; color: #FFFFFF; text-decoration: none; font-weight: 700">Agenda tu cita</a>
+</div>
+</div>
+</section>
+
+<!-- Banner Mentoría Especializada (conservado de la versión anterior) -->
+<section class="mentoria-banner">
+  <div class="mentoria-banner__inner">
+    <div class="mentoria-banner__text">
+      <strong>¿Quieres acompañamiento 1 a 1?</strong>
+      <span>Conoce nuestro servicio de mentoría especializada para agentes e inmobiliarias.</span>
     </div>
-  </section>
+    <a class="mentoria-banner__cta" href="/mentoria">Revisa nuestros servicios de mentoría especializada →</a>
+  </div>
+</section>
 
-  <section style="padding-top: 0;">
-    <div class="plans">
-      <div class="plan reveal">
-        <div class="plan-name">Explorer</div>
-        <p class="plan-desc">Empieza a construir tu futuro en el mundo inmobiliario con las herramientas esenciales para desarrollar tu negocio.</p>
-        <div class="plan-price">
-          <span class="plan-price-num" data-monthly="$189.000" data-annual="$1.890.000">$189.000</span>
-          <span class="plan-price-period" data-monthly="/mes" data-annual="/año">/mes</span>
-        </div>
-        <div class="plan-users">1 Usuario Principal · 1 Usuario Agente</div>
-        <div class="plan-cta"><a href="https://api.red-realestate.com/widget/bookings/agendar_cita_red" target="_blank" rel="noopener" class="btn btn-secondary" onclick="fbq('track','Lead');">Agendar Demostración</a></div>
-        <p class="plan-note">Sin cláusulas. Cancela cuando lo necesites.</p>
-        <ul class="plan-features">
-          <p class="plan-features-title">Incluye:</p>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Agente adicional: $10.000 COP/mes</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>CRM RED</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Tarjeta Digital</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Agenda / Google Calendar / Outlook</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Máximo 100 inmuebles</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Conexión a portales inmobiliarios</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Acceso al MLS / Inmuebles compartidos</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Gestión clientes / embudo de negocios</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Informe a propietarios / facturación</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Página web gratis / portal clientes</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Chatbot y flujos automatizados</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Conexión WhatsApp / IG / FB / TikTok / LinkedIn / YouTube</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Campañas masivas Email / WhatsApp</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Acceso a RED HUB / ALL IN ONE</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Tutoriales, capacitaciones grupales, chat soporte</li>
-        </ul>
-      </div>
-
-      <div class="plan reveal">
-        <div class="plan-name">Broker</div>
-        <p class="plan-desc">Diseñado para líderes, equipos o agencias inmobiliarias que buscan impacto, productividad y expansión. Accede a cursos y certificaciones.</p>
-        <div class="plan-price">
-          <span class="plan-price-num" data-monthly="$299.000" data-annual="$2.990.000">$299.000</span>
-          <span class="plan-price-period" data-monthly="/mes" data-annual="/año">/mes</span>
-        </div>
-        <div class="plan-users">1 Usuario Principal · 5 Usuarios Agentes</div>
-        <div class="plan-cta"><a href="https://api.red-realestate.com/widget/bookings/agendar_cita_red" target="_blank" rel="noopener" class="btn btn-secondary" onclick="fbq('track','Lead');">Agendar Demostración</a></div>
-        <p class="plan-note">Sin cláusulas. Cancela cuando lo necesites.</p>
-        <ul class="plan-features">
-          <p class="plan-features-title">Todo lo de Explorer, más:</p>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Inmuebles ilimitados</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Red Academy y cursos especializados</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Certificación Red Agent</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Certificación Red Legal</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Certificación Red Marketing</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Maestría en Captaciones y Personal Shopper</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Rentas y Administración de Inmuebles</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Taller de Marketing semanal</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Power Leads semanal</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Soporte personalizado</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Dominio web personalizado</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Hosting ilimitado</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Conexión APIs y Webhooks</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Conexión a Notion, Google Contacts</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Descuento en eventos, premios y reconocimientos</li>
-        </ul>
-      </div>
-
-      <div class="plan featured reveal">
-        <div class="plan-badge">Más Popular</div>
-        <div class="plan-name">Red Partner</div>
-        <p class="plan-desc">Conviértete en socio estratégico de la comunidad inmobiliaria. Para quienes buscan construir, crecer y generar ingresos en alianza con RED.</p>
-        <div class="plan-price">
-          <span class="plan-price-num" data-monthly="$390.000" data-annual="$3.890.000">$390.000</span>
-          <span class="plan-price-period" data-monthly="/mes" data-annual="/año">/mes</span>
-        </div>
-        <div class="plan-users">1 Usuario Principal · 5 Usuarios Agentes</div>
-        <div class="plan-cta"><a href="https://api.red-realestate.com/widget/bookings/agendar_cita_red" target="_blank" rel="noopener" class="btn btn-primary" onclick="fbq('track','Lead');">Contactar Equipo Ventas</a></div>
-        <p class="plan-note">Plan mensual con permanencia mínima de 3 meses.</p>
-        <ul class="plan-features">
-          <p class="plan-features-title">Todo lo de Explorer y Broker, más:</p>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Publicación en portales nacionales e internacionales</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Máximo 100 inmuebles ($390.000)</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Plan 250 inmuebles ($720.000/mes)</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Plan 500 inmuebles ($1.190.000/mes)</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Publicación en 20 idiomas</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Informe a propietarios de portales internacionales</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Reportes y métricas de portales internacionales</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Acceso a Red Projects y comisiones especiales</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Plan de comisiones en créditos y seguros</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Oficinas coworking, salas de juntas, salones</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg>Plan de referidos con ingresos residuales</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <a href="/mentoria" class="card reveal mentoria-banner" style="display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; padding:36px 40px; background:linear-gradient(135deg, rgba(140,16,31,0.18), rgba(56,63,69,0.15)); border:1px solid var(--border-strong); text-decoration:none; transition:all .3s;">
-      <div style="flex:1; min-width:260px;">
-        <span class="section-tag" style="display:inline-block; margin-bottom:12px;">Acompañamiento 1 a 1</span>
-        <h2 style="margin-bottom:10px; font-size:clamp(22px,2.6vw,30px);">¿Quieres un acompañamiento <span class="accent">personalizado?</span></h2>
-        <p style="color:var(--text-dim); font-size:16px; max-width:560px;">Conoce nuestra Mentoría Especializada: te enseñamos a comercializar propiedades, dominar la tecnología y construir un negocio que genera resultados.</p>
-      </div>
-      <span class="btn btn-primary" style="white-space:nowrap;">Revisa nuestros servicios de mentoría especializada →</span>
-    </a>
-  </section>
-
-  <section>
-    <div class="section-head reveal">
-      <span class="section-tag">Preguntas frecuentes</span>
-      <h2>Todo lo que necesitas <span class="accent">saber.</span></h2>
-    </div>
-    <div class="faq">
-      <details class="faq-item reveal"><summary>¿Qué es RED Real Estate y cómo funciona?</summary><div class="faq-content">RED es una comunidad y plataforma digital para constructoras, empresas y agentes inmobiliarios que te permite publicar inmuebles, acceder a tecnología avanzada, capacitarte constantemente y recibir apoyo para escalar tu negocio.</div></details>
-      <details class="faq-item reveal"><summary>¿Quiénes pueden unirse a RED Real Estate?</summary><div class="faq-content">Agentes inmobiliarios independientes, empresas del sector, constructoras, nuevos emprendedores inmobiliarios y profesionales que deseen crecer y profesionalizarse.</div></details>
-      <details class="faq-item reveal"><summary>¿Qué beneficios obtengo al hacer parte de la comunidad RED?</summary><div class="faq-content">Acceso a un HUB de herramientas de marketing, CRM especializado, publicaciones en +70 portales nacionales e internacionales, entrenamiento permanente, comisiones al 100%, networking, asesoría legal y herramientas digitales avanzadas.</div></details>
-      <details class="faq-item reveal"><summary>¿Tengo que pagar alguna cláusula de permanencia?</summary><div class="faq-content">No, nuestras membresías EXPLORER y BROKER no tienen cláusulas de permanencia. Puedes cancelar en cualquier momento. La membresía RED PARTNER tiene un mínimo de 3 meses.</div></details>
-      <details class="faq-item reveal"><summary>¿Puedo ganar dinero recomendando otros agentes o empresas?</summary><div class="faq-content">Sí, nuestra membresía RED PARTNER cuenta con un programa de referidos donde puedes ganar comisiones por invitar a nuevos miembros o empresas inmobiliarias y generar ingresos residuales.</div></details>
-      <details class="faq-item reveal"><summary>¿Cómo se publica un inmueble dentro de RED?</summary><div class="faq-content">A través del CRM RED puedes cargar los datos, fotos y videos del inmueble. Tenemos tutoriales y nuestro equipo de soporte también puede explicarte el proceso.</div></details>
-      <details class="faq-item reveal"><summary>¿RED Real Estate tiene oficina física?</summary><div class="faq-content">Sí. Contamos con espacios coworking, salas de juntas y oficinas en varias ciudades de Colombia para nuestros agentes con membresía RED PARTNER.</div></details>
-      <details class="faq-item reveal"><summary>¿Cómo puedo empezar a trabajar con ustedes?</summary><div class="faq-content">Puedes adquirir la membresía que mejor se adapte a tus necesidades directamente en nuestra tienda online. Si deseas ampliar la información antes de tomar una decisión, también puedes agendar una cita con nuestro equipo de crecimiento, quienes te guiarán paso a paso.</div></details>
-      <details class="faq-item reveal"><summary>¿Si pago la anualidad, obtengo algún beneficio especial?</summary><div class="faq-content">Sí. Al pagar la anualidad en cualquiera de nuestras membresías accedes a un descuento exclusivo. Además, si realizas el pago anual del plan Broker o RED Partner, recibirás acceso gratuito a la certificación MASTER AGENT.</div></details>
-      <details class="faq-item reveal"><summary>¿Qué herramientas de marketing avanzado obtengo?</summary><div class="faq-content">Accedes a una plataforma todo-en-uno: CRM especializado, automatización de WhatsApp/Email/SMS, embudos de ventas, constructor de landing pages, calendarios de agendamiento, campañas de remarketing en Meta y Google Ads, chatbot con IA 24/7, formularios inteligentes, reportes en tiempo real e integración con +1.700 apps.</div></details>
-    </div>
-  </section>
-
-  <section>
-    <div class="card reveal" style="text-align: center; padding: 60px 32px; background: linear-gradient(135deg, rgba(140, 16, 31, 0.15), rgba(56, 63, 69, 0.15));">
-      <h2 style="margin-bottom: 16px;">¿Listo para <span class="accent">empezar?</span></h2>
-      <p style="color: var(--text-dim); font-size: 17px; max-width: 500px; margin: 0 auto 32px;">Agenda una demostración personalizada con nuestro equipo y descubre cuál plan es ideal para tu negocio.</p>
-      <a href="https://api.red-realestate.com/widget/bookings/agendar_cita_red" target="_blank" rel="noopener" class="btn btn-primary" onclick="fbq('track','Lead');">Agendar Demostración →</a>
-    </div>
-  </section>
+</div>
 </main>
 
 <div id="footer-placeholder"></div>
+
 <script src="app.js"></script>
 <script>
-  function togglePrice(period) {
-    document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
-    event.target.closest('.toggle-btn').classList.add('active');
-    document.querySelectorAll('.plan-price-num, .plan-price-period').forEach(el => {
-      el.textContent = el.dataset[period];
-    });
+(function(){
+  var TRM=3300, base=[189000,299000,390000], st={anual:false,com:10000000,split:30};
+  function fmt(n){return '$'+String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,'.');}
+  var tgOn='border:none;cursor:pointer;min-height:44px;padding:0 20px;border-radius:999px;font:600 15px Inter,sans-serif;background:#FFFFFF;color:#111318';
+  var tgOff='border:none;cursor:pointer;min-height:44px;padding:0 20px;border-radius:999px;font:600 15px Inter,sans-serif;background:transparent;color:#D4D7DE';
+  var chOn='cursor:pointer;min-height:44px;padding:0 18px;border-radius:10px;font:600 15px Inter,sans-serif;border:1px solid #FFFFFF;background:#FFFFFF;color:#111318';
+  var chOff='cursor:pointer;min-height:44px;padding:0 18px;border-radius:10px;font:600 15px Inter,sans-serif;border:1px solid #3A3F4B;background:transparent;color:#E6E8EC';
+  function set(k,v){document.querySelectorAll('[data-k="'+k+'"]').forEach(function(e){e.textContent=v;});}
+  function chips(id,vals,label,key){
+    var box=document.getElementById(id); box.innerHTML='';
+    vals.forEach(function(v){var b=document.createElement('button');b.type='button';b.textContent=label(v);
+      b.setAttribute('style',st[key]===v?chOn:chOff);b.onclick=function(){st[key]=v;render();};box.appendChild(b);});
   }
+  function render(){
+    var a=st.anual;
+    var price=function(p){return a?fmt(p*10/12):fmt(p);};
+    var note=function(p){return a?'Pagas '+fmt(p*10)+' al año · ahorras '+fmt(p*2):'O '+fmt(p*10/12)+'/mes pagando anual';};
+    set('p1',price(base[0]));set('p2',price(base[1]));set('p3',price(base[2]));
+    set('n1',note(base[0]));set('n2',note(base[1]));set('n3',note(base[2]));
+    document.getElementById('btn-mensual').setAttribute('style',a?tgOff:tgOn);
+    document.getElementById('btn-anual').setAttribute('style',a?tgOn:tgOff);
+    var c={auto:97*TRM,web:50*TRM/12,cursos:4*3000000/12,talleres:2*150000*52/12,jur:250000*52/12,ment:4*150000};
+    var total=170000+c.auto+c.web+c.cursos+c.talleres+c.jur+c.ment;
+    set('cAuto',fmt(c.auto));set('cWeb',fmt(c.web));set('cCursos',fmt(c.cursos));set('cTalleres',fmt(c.talleres));
+    set('cJuridico',fmt(c.jur));set('cMentoria',fmt(c.ment));set('cTotal',fmt(total));
+    set('ahorro',fmt(total-(a?base[0]*10/12:base[0])));set('trmLabel',fmt(TRM));
+    chips('coms',[3000000,5000000,10000000,20000000],fmt,'com');
+    chips('splits',[10,20,30,40,50],function(v){return v+'%';},'split');
+    var lost=st.com*st.split/100, m=Math.floor(lost/base[0]);
+    set('pctLabel',st.split+'%');set('lost',fmt(lost));set('lostYear',fmt(lost*12));set('months',m+(m===1?' mes':' meses'));
+    var inp=document.getElementById('pct-otro'); if(document.activeElement!==inp) inp.value=st.split;
+  }
+  document.getElementById('btn-mensual').onclick=function(){st.anual=false;render();};
+  document.getElementById('btn-anual').onclick=function(){st.anual=true;render();};
+  document.getElementById('pct-otro').addEventListener('change',function(e){var v=parseFloat(e.target.value);if(!isNaN(v)){st.split=Math.max(0,Math.min(100,v));render();}});
+  render();
+})();
 </script>
 </body>
 </html>
